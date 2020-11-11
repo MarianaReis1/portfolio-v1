@@ -1,0 +1,41 @@
+@import '../shared/variables';
+
+body {
+    background-color: $primaryColor1;
+}
+
+.content {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 35% 65%;
+    align-content: center;
+}
+
+.content__text {
+    padding: 50px 50px;
+}
+
+.content__img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0px 40px;
+    margin: auto;
+}
+
+.content__code-caracters {
+    font-family: $fontFamily2;
+    color: $primaryColor2;
+}
+
+.content__code-caracters--close-tag {
+    position: relative;
+    bottom: 0;
+}
+
+.content__title,
+.content__subtitle,
+.content__para {
+    color: $secondaryColor1;
+    padding-left: 70px;
+}

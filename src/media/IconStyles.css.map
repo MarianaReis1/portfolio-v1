@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,uGAAI;ADGR,AAAA,MAAM,GADV,IAAI,CACW;EACP,IAAI,ECKI,OAAO;CDJlB",
+    "sources": [
+        "IconStyles.scss",
+        "../shared/_variables.scss"
+    ],
+    "names": [],
+    "file": "IconStyles.css"
+}

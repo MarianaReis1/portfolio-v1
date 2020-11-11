@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
+body {
+  background-color: #0D0D49;
+}
+
+.projects {
+  width: 100vw;
+  height: calc(100vh - 70px);
+  padding: 0 20px;
+}
+
+.projects__code-caracters {
+  font-family: "Courier Prime", monospace;
+  color: #49CBBF;
+}
+
+.content__code-caracters--close-tag {
+  position: absolute;
+  bottom: 20px;
+}
+
+.projects__title {
+  color: #fff;
+  padding-left: 70px;
+}
+
+.projects__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.projects__ipTracker {
+  width: 240px;
+  height: 200px;
+  background-color: #37474F;
+}
+
+.projects__ipTracker-img {
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  width: 230px;
+  height: auto;
+}
+
+.projects__ipTracker-title, .projects__ipTracker-subtitle, .projects__ipTracker-seeMore {
+  margin-left: 5px;
+  color: #fff;
+}
+
+.projects__ipTracker-subtitle {
+  font-weight: 400;
+}
+
+.projects__ipTracker span {
+  cursor: pointer;
+}
+
+.projects__ipTracker-seeMore {
+  text-align: center;
+  display: block;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+:hover > .projects__ipTracker-seeMore {
+  display: none;
+}
+
+.projects__ipTracker-description {
+  width: inherit;
+  background-color: #37474F;
+  padding: 5px;
+  display: none;
+}
+
+:hover > .projects__ipTracker-description {
+  display: block;
+}
+/*# sourceMappingURL=Projects__Content.css.map */

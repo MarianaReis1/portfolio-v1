@@ -1,0 +1,84 @@
+@import '../shared/variables';
+
+body {
+    background-color: $primaryColor1;
+}
+
+.projects {
+    width: 100vw;
+    height: calc(100vh - 70px);
+    padding: 0 20px;
+}
+
+.projects__code-caracters {
+    font-family: $fontFamily2;
+    color: $primaryColor2;
+}
+
+.content__code-caracters--close-tag {
+    position: absolute;
+    bottom: 20px;
+}
+
+.projects__title {
+    color: $secondaryColor1;
+    padding-left: 70px;
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.projects__ipTracker {
+    width: 240px;
+    height: 200px;
+    background-color: $secondaryColor2;
+
+    &-img {
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+        width: 230px;
+        height: auto;
+    }
+
+    &-title,
+    &-subtitle,
+    &-seeMore {
+        margin-left: 5px;
+        color: $secondaryColor1;
+    }
+
+    &-subtitle {
+        font-weight: 400;
+    }
+
+    & span {
+        cursor: pointer;
+    }
+
+    &-seeMore {
+        text-align: center;
+        display: block;
+        // visibility: visible;
+        margin-left: 0;
+        cursor: pointer;
+
+        :hover > &{
+            display: none;
+        }
+    }
+
+    &-description {
+        width: inherit;
+        background-color: $secondaryColor2;
+        padding: 5px;
+        display: none;
+
+        :hover > &{
+            display: block;
+        }
+
+    }
+}
