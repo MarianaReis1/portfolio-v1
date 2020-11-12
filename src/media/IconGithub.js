@@ -1,6 +1,6 @@
 import './IconStyles.css';
 
-export default function GithubIcon (){
+export default function IconGithub (){
     return (
         <svg 
             fill="#FFFFFF"
@@ -10,8 +10,8 @@ export default function GithubIcon (){
             width="30px" 
             height="30px" 
             viewBox="0 0 550 550" 
-            enable-background="new 0 0 550 550" 
-            xmlspace="preserve" 
+            enableBackground="new 0 0 550 550" 
+            xmlSpace="preserve" 
         >
             <path
                 d="M274.966,0C123.131,0,0,123.612,0,276.101c0,121.961,78.787,225.43,188.1,261.972

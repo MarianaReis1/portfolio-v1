@@ -11,8 +11,8 @@ export default function IconEmail (){
             width="30px" 
             height="30px" 
             viewBox="0 0 550 550" 
-            enable-background="new 0 0 550 550" 
-            xmlspace="preserve" 
+            enableBackground="new 0 0 550 550" 
+            xmlSpace="preserve" 
         >
             <path
                 d="M274.999,0C123.122,0,0,123.122,0,275C0,426.879,123.122,550,274.999,550C426.877,550,550,426.879,550,275

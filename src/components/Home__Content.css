@@ -1,44 +1,103 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
 body {
   background-color: #0D0D49;
+  font-size: 14px;
 }
 
-.content {
-  display: -ms-grid;
-  display: grid;
+.home {
+  display: block;
   width: 100vw;
-  -ms-grid-columns: 35% 65%;
-      grid-template-columns: 35% 65%;
+  height: calc(100vh - 90px);
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
-.content__text {
-  padding: 50px 50px;
+.home__content {
+  padding: 40px 60px;
 }
 
-.content__img {
-  width: 100%;
-  height: auto;
-  position: relative;
-  padding: 0px 40px;
-  margin: auto;
+.home__img {
+  display: none;
 }
 
-.content__code-caracters {
+.home__code-caracters {
   font-family: "Courier Prime", monospace;
   color: #49CBBF;
+  padding: 0.3rem 0;
+  margin-left: 20px;
 }
 
-.content__code-caracters--close-tag {
+.home__code-caracters--open-tag {
+  margin-left: 5px;
+  position: relative;
+  top: 0;
+}
+
+.home__code-caracters--close-tag {
+  margin-left: 5px;
   position: relative;
   bottom: 0;
 }
 
-.content__title,
-.content__subtitle,
-.content__para {
+.home__code-caracters--a {
+  margin-left: 50px;
+}
+
+.home__title,
+.home__subtitle,
+.home__para,
+.home__resume {
   color: #fff;
-  padding-left: 70px;
+  font-size: 1.2rem;
+  padding-left: 50px;
+}
+
+.home__resume {
+  padding-left: 100px;
+}
+
+@media all and (min-width: 768px) {
+  .home {
+    display: -ms-grid;
+    display: grid;
+    width: 100vw;
+    height: calc(100vh - 130px);
+    -ms-grid-columns: 35% 65%;
+        grid-template-columns: 35% 65%;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .home__content {
+    padding: 50px 50px;
+  }
+  .home__img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0px 50px;
+    margin: auto;
+  }
+  .home__code-caracters {
+    font-family: "Courier Prime", monospace;
+    color: #49CBBF;
+    padding-left: 40px;
+    padding: 1% 0;
+  }
+  .home__code-caracters--open-tag {
+    padding-left: 0px;
+    position: relative;
+    top: 0;
+  }
+  .home__code-caracters--close-tag {
+    position: relative;
+    bottom: 0;
+  }
+  .home__title,
+  .home__subtitle,
+  .home__para {
+    color: #fff;
+    padding-left: 70px;
+  }
 }
 /*# sourceMappingURL=Home__Content.css.map */

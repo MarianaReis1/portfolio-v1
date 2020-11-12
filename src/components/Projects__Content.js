@@ -1,4 +1,5 @@
 import './Projects__Content.css'
+import Header from './Header'
 import IpTracker from './Projects__IpTracker'
 import PauseMe from './Projects__PauseMe'
 
@@ -23,21 +24,23 @@ const projectsList = [
 export default function ProjectsContent (){
 
     return (
-        <section className="projects">
-            <p className="projects__code-caracters">&#60;body&#62;</p>
-            <br/>
-                <h2 className="projects__title">Welcome to my Projetcs</h2>
-            <br/>
-                <section className="projects__grid">
-                    <IpTracker data={projectsList[0]}/>
-                    <PauseMe data={projectsList[1]}/>
-                    <IpTracker data={projectsList[0]}/>
-                    <PauseMe data={projectsList[1]}/>
+        <section>
+            <Header />
+            <section className="projects">
+                <p className="projects__code-caracters">&#60;body&#62;</p>
+                <br/>
+                    <h2 className="projects__title">Welcome to my Projetcs</h2>
+                <br/>
+                    <section className="projects__grid">
+                        <IpTracker data={projectsList[0]}/>
+                        <PauseMe data={projectsList[1]}/>
+                        <IpTracker data={projectsList[0]}/>
+                        <PauseMe data={projectsList[1]}/>
+                    
+                    </section>
+                <p className="projects__code-caracters content__code-caracters--close-tag">&#60;/body&#62;</p>
                 
-                </section>
-            <p className="projects__code-caracters content__code-caracters--close-tag">&#60;/body&#62;</p>
-            
+            </section>
         </section>
-
     )
 }

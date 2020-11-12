@@ -6,14 +6,15 @@ body {
 .header {
   width: 100vw;
   background-color: #0D0D49;
-  height: 70px;
+  height: 80px;
 }
 
 .header__logo {
   width: auto;
-  height: 70px;
+  height: 30px;
   float: left;
-  padding: 15px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .header__logo:hover {
@@ -21,60 +22,104 @@ body {
 }
 
 .header__list {
-  float: right;
-  padding-top: 15px;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  top: 10px;
+  width: 100vw;
+  -ms-grid-columns: auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto;
+}
+
+.header__list--hidden {
+  display: none;
 }
 
 .header__item {
   display: inline-block;
-  color: #ffffff;
-  padding: 0 20px;
-  vertical-align: middle;
+  font-size: 12px;
+  color: #fff;
+  padding: 5px 10px;
 }
 
-.header__item:hover {
+.header__burguer-icon {
+  position: absolute;
+  right: 20px;
+  top: 20px;
   cursor: pointer;
-  color: #49CBBF;
 }
 
-.header__item--icon {
-  padding-top: 5px;
+.header__burguer-icon-img {
+  height: 30px;
+  width: auto;
 }
 
 .header__item--icon-email {
-  visibility: visible;
-}
-
-.header__icon-email {
-  position: relative;
+  visibility: hidden;
 }
 
 .header__icon-email--tooltip {
-  visibility: hidden;
-  width: 120px;
-  background-color: #182524;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: -35%;
+  display: none;
 }
 
-:hover > .header__icon-email--tooltip {
-  visibility: visible;
-}
-
-.header__icon-email--tooltip::after {
-  content: " ";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #182524 transparent;
+@media all and (min-width: 768px) {
+  .header__logo {
+    height: 60px;
+    margin-left: 50px;
+  }
+  .header__list--desktop {
+    display: block;
+    position: relative;
+    width: unset;
+    float: right;
+    margin-top: 35px;
+    margin-right: 50px;
+    background-color: #0D0D49;
+  }
+  .header__burguer-icon {
+    display: none;
+  }
+  .header__item {
+    display: inline-block;
+    color: #fff;
+    padding: 0 20px;
+    vertical-align: middle;
+    font-size: 16px;
+  }
+  .header__item:hover {
+    color: #49CBBF;
+  }
+  .header__item--icon {
+    padding-top: 5px;
+  }
+  .header__icon-email {
+    position: relative;
+  }
+  .header__icon-email--tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: #182524;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: -35%;
+  }
+  :hover > .header__icon-email--tooltip {
+    visibility: visible;
+  }
+  .header__icon-email--tooltip::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #182524 transparent;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

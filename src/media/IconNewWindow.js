@@ -1,6 +1,6 @@
 import './IconStyles.css';
 
-export default function NewWindowIcon (){
+export default function IconNewWindow (){
     return (
         <svg 
             fill="#FFFFFF"
@@ -11,8 +11,8 @@ export default function NewWindowIcon (){
             width="30px" 
             height="30px" 
             viewBox="0 0 550 550" 
-            enable-background="new 0 0 550 550" 
-            xmlspace="preserve" 
+            enableBackground="new 0 0 550 550" 
+            xmlSpace="preserve" 
         >
             <path 
                 d="M275,0C123.122,0,0,123.122,0,275c0,151.878,123.122,275,275,275s275-123.122,275-275

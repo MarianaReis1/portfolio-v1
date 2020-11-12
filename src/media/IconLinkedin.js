@@ -1,6 +1,6 @@
 import './IconStyles.css';
 
-export default function LinkedinIcon (){
+export default function IconLinkedin (){
     return (
         <svg 
             fill="#FFFFFF"
@@ -10,8 +10,8 @@ export default function LinkedinIcon (){
             width="30px" 
             height="30px" 
             viewBox="0 0 550 550" 
-            enable-background="new 0 0 550 550" 
-            xmlspace="preserve" 
+            enableBackground="new 0 0 550 550" 
+            xmlSpace="preserve" 
         >
             <path
                 d="M275,0C123.146,0,0,123.145,0,275c0,151.854,123.146,275,275,275s275-123.146,275-275
