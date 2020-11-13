@@ -6,8 +6,8 @@ body {
 
 .header {
     width: 100vw;
-    background-color: $primaryColor1;
-    height: 80px;
+    background-color: $secondaryColor4;
+    min-height: 60px;
 }
 
 .header__logo {
@@ -24,22 +24,15 @@ body {
 
 .header__list {
     display: grid;
-    position: relative;
-    top: 10px;
-    width: 100vw;
-    // background-color: $primaryColor3;
     grid-template-columns: auto auto auto auto auto;
+    position: relative;
+    width: 100vw;
+    padding: 10px 20px;
+    background-color: $secondaryColor4;
     
     &--hidden {
         display: none;
     }
-}
-
-.header__item {
-    display: inline-block;
-    font-size: 12px;
-    color: $secondaryColor1;
-    padding: 5px 10px;
 }
 
 .header__burguer-icon {
@@ -54,9 +47,14 @@ body {
     }
 }
 
-.header__item--icon {
-    &-email{
-        visibility: hidden;
+.header__item {
+    display: inline-block;
+    font-size: 12px;
+    color: $secondaryColor1;
+    padding: 5px 10px;
+
+    &:hover{
+        color: $primaryColor2;
     }
 }
 
@@ -66,8 +64,11 @@ body {
     }
 }
 
-
 @media all and (min-width: 768px){
+
+    .header {
+        min-height: 100px;
+    }
 
     .header__logo {
         height: 60px;
@@ -81,7 +82,7 @@ body {
         float: right;
         margin-top: 35px;
         margin-right: 50px;
-        background-color: $primaryColor1;
+        background-color: $secondaryColor4;
     }
     
     .header__burguer-icon {
@@ -89,21 +90,14 @@ body {
     }
 
     .header__item {
-        display: inline-block;
-        color: $secondaryColor1;
-        padding: 0 20px;
+        padding: 0 25px;
         vertical-align: middle;
-        font-size: 16px;
-    
-        &:hover{
-            color: $primaryColor2;
-        }
+        font-size: 1.2rem;
     }
     
     .header__item--icon {
         padding-top: 5px;
     }
-
     
     .header__icon-email {
         position: relative;
@@ -119,10 +113,11 @@ body {
             position: absolute;
             z-index: 1;
             top: 100%;
-            left: -35%;
+            left: -25%;
     
             :hover > & {
                 visibility: visible;
+                display: block;
             }
 
             &::after {
@@ -139,3 +134,43 @@ body {
     }
 }
 
+@media all and (min-width: 1280px){
+
+    .header__logo {
+        height: 70px;
+    }
+
+    .header__item {
+        padding: 0 35px;
+        font-size: 1.5rem;
+    }
+
+    .header__item--icon {
+        svg {
+            width: 40px;
+            height: auto;
+        }
+    }
+}
+
+@media all and (min-width: 1440px){
+
+    .header {
+        min-height: 120px;
+    }
+
+    .header__logo {
+        height: 80px;
+    }
+
+    .header__item {
+        padding: 0 45px;
+    }
+
+    .header__item--icon {
+        svg {
+            width: 50px;
+            height: auto;
+        }
+    }
+}

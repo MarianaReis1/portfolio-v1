@@ -1,4 +1,4 @@
-import './Projects__Content.css'
+import './Projects.css'
 import Header from './Header'
 import IpTracker from './Projects__IpTracker'
 import PauseMe from './Projects__PauseMe'

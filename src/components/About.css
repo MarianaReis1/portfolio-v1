@@ -13,7 +13,9 @@ body {
 }
 
 .home__content {
-  padding: 40px 60px;
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 5px;
 }
 
 .home__img {
@@ -23,37 +25,38 @@ body {
 .home__code-caracters {
   font-family: "Courier Prime", monospace;
   color: #49CBBF;
-  padding: 0.3rem 0;
+  padding: 0.4rem 0;
+}
+
+.home__code-caracters--body {
   margin-left: 20px;
 }
 
-.home__code-caracters--open-tag {
-  margin-left: 5px;
-  position: relative;
-  top: 0;
+.home__code-caracters--h2 {
+  margin-left: 40px;
 }
 
-.home__code-caracters--close-tag {
-  margin-left: 5px;
-  position: relative;
-  bottom: 0;
+.home__code-caracters--h3 {
+  margin-left: 60px;
 }
 
-.home__code-caracters--a {
-  margin-left: 50px;
+.home__code-caracters--p {
+  margin-left: 40px;
 }
 
 .home__title,
 .home__subtitle,
-.home__para,
-.home__resume {
+.home__para {
   color: #fff;
-  font-size: 1.2rem;
   padding-left: 50px;
 }
 
-.home__resume {
-  padding-left: 100px;
+.home__title {
+  font-size: 1.5rem;
+}
+
+.home__subtitle {
+  padding-left: 70px;
 }
 
 @media all and (min-width: 768px) {
@@ -100,4 +103,4 @@ body {
     padding-left: 70px;
   }
 }
-/*# sourceMappingURL=Home__Content.css.map */
+/*# sourceMappingURL=About.css.map */

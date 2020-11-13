@@ -5,8 +5,8 @@ body {
 
 .header {
   width: 100vw;
-  background-color: #0D0D49;
-  height: 80px;
+  background-color: #060642;
+  min-height: 60px;
 }
 
 .header__logo {
@@ -24,22 +24,16 @@ body {
 .header__list {
   display: -ms-grid;
   display: grid;
-  position: relative;
-  top: 10px;
-  width: 100vw;
   -ms-grid-columns: auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto;
+  position: relative;
+  width: 100vw;
+  padding: 10px 20px;
+  background-color: #060642;
 }
 
 .header__list--hidden {
   display: none;
-}
-
-.header__item {
-  display: inline-block;
-  font-size: 12px;
-  color: #fff;
-  padding: 5px 10px;
 }
 
 .header__burguer-icon {
@@ -54,8 +48,15 @@ body {
   width: auto;
 }
 
-.header__item--icon-email {
-  visibility: hidden;
+.header__item {
+  display: inline-block;
+  font-size: 12px;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.header__item:hover {
+  color: #49CBBF;
 }
 
 .header__icon-email--tooltip {
@@ -63,6 +64,9 @@ body {
 }
 
 @media all and (min-width: 768px) {
+  .header {
+    min-height: 100px;
+  }
   .header__logo {
     height: 60px;
     margin-left: 50px;
@@ -74,20 +78,15 @@ body {
     float: right;
     margin-top: 35px;
     margin-right: 50px;
-    background-color: #0D0D49;
+    background-color: #060642;
   }
   .header__burguer-icon {
     display: none;
   }
   .header__item {
-    display: inline-block;
-    color: #fff;
-    padding: 0 20px;
+    padding: 0 25px;
     vertical-align: middle;
-    font-size: 16px;
-  }
-  .header__item:hover {
-    color: #49CBBF;
+    font-size: 1.2rem;
   }
   .header__item--icon {
     padding-top: 5px;
@@ -106,10 +105,11 @@ body {
     position: absolute;
     z-index: 1;
     top: 100%;
-    left: -35%;
+    left: -25%;
   }
   :hover > .header__icon-email--tooltip {
     visibility: visible;
+    display: block;
   }
   .header__icon-email--tooltip::after {
     content: " ";
@@ -120,6 +120,36 @@ body {
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent #182524 transparent;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .header__logo {
+    height: 70px;
+  }
+  .header__item {
+    padding: 0 35px;
+    font-size: 1.5rem;
+  }
+  .header__item--icon svg {
+    width: 40px;
+    height: auto;
+  }
+}
+
+@media all and (min-width: 1440px) {
+  .header {
+    min-height: 120px;
+  }
+  .header__logo {
+    height: 80px;
+  }
+  .header__item {
+    padding: 0 45px;
+  }
+  .header__item--icon svg {
+    width: 50px;
+    height: auto;
   }
 }
 /*# sourceMappingURL=Header.css.map */
