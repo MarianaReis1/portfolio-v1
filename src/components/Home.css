@@ -64,15 +64,13 @@ body {
   padding-left: 60px;
 }
 
-.home__buttons {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin: 0.5rem 0;
+.home__contact-button {
+  margin: auto;
+  display: block;
+}
+
+.home__contact-button:active {
+  background: #49CBBF;
 }
 
 @media all and (min-height: 569px) {
@@ -81,10 +79,6 @@ body {
   }
   .home__code-caracters {
     padding: 1rem 0;
-  }
-  .home__buttons {
-    margin: 1rem 0;
-    grid-column-gap: 10px;
   }
 }
 
@@ -102,22 +96,23 @@ body {
     padding: 1.5% 0;
   }
   .home__title {
-    font-size: 1.9rem;
+    font-size: 2.3rem;
     margin-left: 60px;
   }
   .home__subtitle {
-    font-size: 1.6rem;
-    margin-left: 60px;
+    font-size: 1.7rem;
+    margin-left: 20px;
   }
-  .home__buttons {
-    margin: 2rem 0;
-    font-size: 1.5rem;
+  .home__contact-button {
+    margin: 2rem 60px;
+    font-size: 1.3rem;
+    width: 200px;
   }
 }
 
 @media all and (min-width: 1024px) {
   .home {
-    max-width: 100vw;
+    width: 100vw;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 35% 65%;
@@ -128,7 +123,7 @@ body {
     height: calc(100vh - 130px);
   }
   .home__content {
-    padding: 50px 50px;
+    padding: 20px 50px 0 50px;
   }
   .home__img {
     display: none;
@@ -146,21 +141,6 @@ body {
     color: #49CBBF;
     padding-left: 40px;
     padding: 1% 0;
-  }
-  .home__code-caracters--open-tag {
-    padding-left: 0px;
-    position: relative;
-    top: 0;
-  }
-  .home__code-caracters--close-tag {
-    position: relative;
-    bottom: 0;
-  }
-  .home__title,
-  .home__subtitle,
-  .home__para {
-    color: #fff;
-    padding-left: 70px;
   }
 }
 /*# sourceMappingURL=Home.css.map */

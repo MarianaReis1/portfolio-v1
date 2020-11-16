@@ -12,10 +12,10 @@ body {
 
 .header__logo {
     width: auto;
-    height: 30px;
+    height: 40px;
     float: left;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
 
     &:hover{
         cursor: pointer;
@@ -35,10 +35,10 @@ body {
     }
 }
 
-.header__burguer-icon {
+.header__burguerX-icon {
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 15px;
     cursor: pointer;
 
     &-img {
@@ -55,6 +55,12 @@ body {
 
     &:hover{
         color: $primaryColor2;
+    }
+
+    svg {
+        &:active {
+            fill: $primaryColor2;
+        }
     }
 }
 
@@ -73,6 +79,7 @@ body {
     .header__logo {
         height: 60px;
         margin-left: 50px;
+        margin-top: 20px;
     }
 
     .header__list--desktop {
@@ -85,7 +92,7 @@ body {
         background-color: $secondaryColor4;
     }
     
-    .header__burguer-icon {
+    .header__burguerX-icon {
         display: none;    
     }
 
@@ -95,25 +102,22 @@ body {
         font-size: 1.2rem;
     }
     
-    .header__item--icon {
-        padding-top: 5px;
-    }
-    
     .header__icon-email {
         position: relative;
         &--tooltip {
             visibility: hidden;
-            width: 120px;
+            width: 230px;
             background-color: $secondaryColor3;
             color: $secondaryColor1;
             text-align: center;
             border-radius: 6px;
-            padding: 5px 0;
+            padding: 0.5rem 0.2rem;
+            cursor: pointer;
     
             position: absolute;
             z-index: 1;
             top: 100%;
-            left: -25%;
+            left: -94%;
     
             :hover > & {
                 visibility: visible;
@@ -129,6 +133,13 @@ body {
                 border-width: 5px;
                 border-style: solid;
                 border-color: transparent transparent $secondaryColor3 transparent;
+            }
+
+            input {
+                background-color: $secondaryColor3;
+                color: $secondaryColor3;
+                border: none;
+                height: 0px;
             }
         }
     }
@@ -149,6 +160,16 @@ body {
         svg {
             width: 40px;
             height: auto;
+        }
+    }
+
+    .header__icon-email {
+        &--tooltip {
+            left: 0%;
+
+            input {
+                display: none;
+            }
         }
     }
 }
