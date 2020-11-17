@@ -1,16 +1,21 @@
+import IconGithub from '../media/IconGithub'
+import IconMoreInfo from '../media/IconMoreInfo'
+import IconNewWindow from '../media/IconNewWindow'
 import IpTrackerImg from '../media/IpTrackerImg.png'
 
+
 export default function IpTracker (props) {
-    console.log(props)
+    console.log(props.data.imgSrc)
     return (
-        <div className="projects__ipTracker" >
-            <img className="projects__ipTracker-img" src={IpTrackerImg} alt={props.data.gifAlt} />
-            <h4 className="projects__ipTracker-title">{props.data.title}</h4>
-            <h6 className="projects__ipTracker-subtitle">{props.data.tools}</h6>
-            <span>
-                <div className="projects__ipTracker-seeMore">See More</div>
-                <p className="projects__ipTracker-description">{props.data.quickDescription}</p>
-            </span>
+        <div className="projects__items" >
+            <img className="projects__items-img" src={IpTrackerImg} alt={props.data.gifAlt} />
+            <h4 className="projects__items-title">{props.data.title}</h4>
+            <h6 className="projects__items-subtitle">{props.data.tools}</h6>
+            <div className="projects__icons">
+                <a><IconMoreInfo className="projects__icons-github" /></a>
+                <a><IconGithub className="projects__icons-github" /></a>
+                <a><IconNewWindow className="projects__icons-github" /></a>
+            </div>
         </div>
     )
 }

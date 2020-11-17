@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
 body {
   background-color: #0D0D49;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .projects {
@@ -12,71 +15,71 @@ body {
 .projects__code-caracters {
   font-family: "Courier Prime", monospace;
   color: #49CBBF;
+  padding: 0.5rem 0;
 }
 
-.content__code-caracters--close-tag {
-  position: absolute;
-  bottom: 20px;
+.projects__code-caracters--html {
+  display: none;
+}
+
+.projects__code-caracters--h2 {
+  margin-left: 20px;
 }
 
 .projects__title {
   color: #fff;
-  padding-left: 70px;
+  margin: 0.5rem 0;
+  margin-left: 30px;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
-.projects__grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+.projects__download-button {
+  margin: 2.3rem auto;
+  display: block;
 }
 
-.projects__ipTracker {
+.projects__items {
+  background-color: #49CBBF;
   width: 240px;
-  height: 200px;
-  background-color: #37474F;
+  height: 240px;
+  margin: 1rem auto;
 }
 
-.projects__ipTracker-img {
+.projects__items-img {
   display: block;
   margin: auto;
-  margin-top: 5px;
+  padding-top: 5px;
   width: 230px;
+  max-height: 130px;
   height: auto;
 }
 
-.projects__ipTracker-title, .projects__ipTracker-subtitle, .projects__ipTracker-seeMore {
-  margin-left: 5px;
-  color: #fff;
+.projects__items-title, .projects__items-subtitle {
+  color: #182524;
+  text-align: center;
 }
 
-.projects__ipTracker-subtitle {
+.projects__items-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+
+.projects__items-subtitle {
+  font-size: 0.8rem;
   font-weight: 400;
 }
 
-.projects__ipTracker span {
-  cursor: pointer;
-}
-
-.projects__ipTracker-seeMore {
-  text-align: center;
-  display: block;
-  margin-left: 0;
-  cursor: pointer;
-}
-
-:hover > .projects__ipTracker-seeMore {
-  display: none;
-}
-
-.projects__ipTracker-description {
-  width: inherit;
-  background-color: #37474F;
-  padding: 5px;
-  display: none;
-}
-
-:hover > .projects__ipTracker-description {
-  display: block;
+.projects__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.6rem auto;
+  width: 150px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=Projects.css.map */

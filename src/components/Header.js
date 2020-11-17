@@ -32,25 +32,25 @@ export default function Header(){
                 {/* <a href="/home" ></a> */}
             </img>
             <ul className={isMobileSize && !isActive ? "header__list" : "header__list--desktop header__list--hidden" }>
-                <li className="header__item">
+                <a><li className="header__item">
                     <IconAbout />
-                </li>
-                <li className="header__item">
+                </li></a>
+                <a><li className="header__item">
                     <IconWorks />
-                </li>
+                </li></a>
                 <li className="header__item header__icon-email">
-                    <IconEmail className="header__icon-email" />
+                    <a><IconEmail className="header__icon-email" /></a>
                         <span className="header__icon-email--tooltip" onClick={() => copyEmailToClipboard()}>
                             You can click here to copy my email! :)
                             <input id="email" type="text" value="marianaluizamr@gmail.com" readOnly></input>
                         </span>
                 </li>
-                <li className="header__item">
+                <a><li className="header__item">
                     <IconGithub />
-                </li>
-                <li className="header__item">
+                </li></a>
+                <a><li className="header__item">
                     <IconLinkedin />
-                </li>
+                </li></a>
             </ul>
             <div className="header__burguerX-icon" >
                 
@@ -63,6 +63,3 @@ export default function Header(){
 
 // to do list :
     // add links
-    // add tooltip Text
-    // add function onclick li email item to coppy my email 
-    // mobile and tablet version

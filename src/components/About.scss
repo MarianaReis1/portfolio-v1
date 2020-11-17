@@ -1,63 +1,78 @@
 @import '../shared/variables';
 
-body {
-    background-color: $primaryColor1;
-    font-size: 14px;
-}
-
-.home {
+.about {
     display: block;
     width: 100vw;
     height: calc(100vh - 90px);
     align-content: center;
 }
 
-.home__content {
-    padding-top: 40px;
-    padding-left: 15px;
-    padding-right: 5px;
+.about__content {
+    padding: 10px 20px;
 }
 
-.home__img {
-    display: none;
-}
-
-.home__code-caracters {
+.about__code-caracters {
     font-family: $fontFamily2;
     color: $primaryColor2;
     padding: 0.4rem 0;
+
+    &--html{
+        display: none;
+    }
+
+    &--h2 {
+        margin-left: 20px;
+    }
+
+    &--p {
+        margin-left: 20px;
+    }
 }
 
-.home__code-caracters--body {
-    margin-left: 20px;
-}
-
-.home__code-caracters--h2 {
-    margin-left: 40px;
-}
-
-.home__code-caracters--h3 {
-    margin-left: 60px;
-}
-
-.home__code-caracters--p {
-    margin-left: 40px;
-}
-
-
-.home__title,
-.home__subtitle,
-.home__para {
+.about__title,
+.about__paragraph {
     color: $secondaryColor1;
-    padding-left: 50px;
 }
 
-.home__title {
+.about__title {
     font-size: 1.5rem;
+    margin-left: 30px;
 }
 
-.home__subtitle {
-    padding-left: 70px;
+.about__paragraph {
+    color: $secondaryColor1;
+    text-align: justify;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.about__download-button {
+    margin: 1rem auto;
+    display: block;
+    font-size: 1rem;
+}
+
+@media all and (min-height: 569px){
+    .about__content {
+        padding: 20px 30px;
+    }
+
+    .about__code-caracters {
+        padding: 0.8rem 0;
+    }
+
+    .about__title {
+        font-size: 1.9rem;
+    }
+
+    .about__paragraph {
+        font-size: 1.1rem;
+        margin: 1rem 0;
+    }
+    
+    .about__download-button {
+        margin: 1.2rem auto;
+    }   
 }
 
 @media all and (min-width: 768px){

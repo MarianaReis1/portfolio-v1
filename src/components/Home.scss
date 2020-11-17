@@ -1,10 +1,5 @@
 @import '../shared/variables';
 
-body {
-    background-color: $primaryColor1;
-    font-size: 18px;
-}
-
 .home {
     width: 100vw;
     height: calc(100vh - 100px);
@@ -67,7 +62,7 @@ body {
 }
 
 .home__contact-button {
-    margin: auto;
+    margin: 1rem auto;
     display: block;
 
     &:active {

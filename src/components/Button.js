@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 // import '../shared/_variables.scss'
 
 const Button = styled.button`
@@ -8,8 +8,7 @@ const Button = styled.button`
     color: #FFF;
     font-weight: 500;
     padding: 0.4rem 0.8rem;
-    min-width: 130px;
-    /* width: 120px; */
+    min-width: 150px;
 
     &:hover {
         background: #49CBBF;

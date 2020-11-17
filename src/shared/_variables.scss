@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap');
 
 
-
 $fontFamily1: 'Poppins', sans-serif;  // on texts
 $fontFamily2: 'Courier Prime', monospace;  // on special code caracters
 $fontFamily3: 'Ruluko', sans-serif;  // on titles
@@ -15,3 +14,10 @@ $secondaryColor1: #fff; //White
 $secondaryColor2: #37474F; // Light Grey
 $secondaryColor3: #182524 ; // Dark Grey
 $secondaryColor4: #060642; // Darker Blue
+
+body {
+    background-color: $primaryColor1;
+    font-family: $fontFamily1;
+    font-weight: 400;
+    font-size: 14px;
+}
