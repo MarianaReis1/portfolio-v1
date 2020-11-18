@@ -1,13 +1,9 @@
 import './About.css'
-import Header from './Header'
 import Button from './Button'
 
 
 export default function HomeContent (){
-console.log(window.innerWidth)
-return (
-    <section>
-        <Header />
+    return (
         <section className="about">
             <div className="about__content">
                 <p className="about__code-caracters about__code-caracters--html">&#60;html&#62;</p>    
@@ -24,13 +20,10 @@ return (
                         <p className="about__code-caracters about__code-caracters--p">&#60;/p&#62;</p>
                         <Button className="about__download-button">DOWNLOAD CV</Button>
                 <p className="about__code-caracters about__code-caracters--body">&#60;/body&#62;</p>
-                <p className="about__code-caracters about__code-caracters--html">&#60;/html&#62;</p>    
-
+                <p className="about__code-caracters about__code-caracters--html">&#60;/html&#62;</p>
             </div>
         </section>
-    
-    </section>
-)
+    )
 }
 
 // to do 

@@ -1,1 +1,42 @@
-// @import '../shared/variables';
+@import '../shared/variables';
+
+body {
+    color: $secondaryColor1
+}
+
+.projectPage {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    padding: 0 20px;
+}
+
+.projectPage__title {
+    margin-left: 30px;
+    font-size: 1rem;
+}
+
+.projectPage__img {
+    width: 85%;
+    margin: 1rem auto;
+    display: block;
+}
+
+.projectPage__subtitle {
+    display: block;
+    color: $secondaryColor1;
+    text-align: center;
+}
+
+.projectPage_icons {
+    display: flex;
+    margin: 0.6rem auto;
+    width: 150px;
+    justify-content: space-around;
+}
+
+.projectPage_paragraph {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 1.2rem auto;
+}

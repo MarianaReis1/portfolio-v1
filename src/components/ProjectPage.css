@@ -1,1 +1,52 @@
-/* No CSS *//*# sourceMappingURL=ProjectPage.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
+body {
+  background-color: #0D0D49;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+body {
+  color: #fff;
+}
+
+.projectPage {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  padding: 0 20px;
+}
+
+.projectPage__title {
+  margin-left: 30px;
+  font-size: 1rem;
+}
+
+.projectPage__img {
+  width: 85%;
+  margin: 1rem auto;
+  display: block;
+}
+
+.projectPage__subtitle {
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+
+.projectPage_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.6rem auto;
+  width: 150px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.projectPage_paragraph {
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 1.2rem auto;
+}
+/*# sourceMappingURL=ProjectPage.css.map */

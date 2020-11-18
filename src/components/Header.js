@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Header.css'
 import Logo from '../media/logo-green.png'
 import IconWorks from '../media/IconWorks'
@@ -28,18 +29,16 @@ export default function Header(){
     
     return (
         <div className="header">
-            <img className="header__logo" src={Logo} alt="Logo" >
-                {/* <a href="/home" ></a> */}
-            </img>
+            <Link to="/" ><img className="header__logo" src={Logo} alt="Logo" /></Link>
             <ul className={isMobileSize && !isActive ? "header__list" : "header__list--desktop header__list--hidden" }>
-                <a><li className="header__item">
+                <Link to="/about"><li className="header__item">
                     <IconAbout />
-                </li></a>
-                <a><li className="header__item">
+                </li></Link>
+                <Link to="/projects"><li className="header__item">
                     <IconWorks />
-                </li></a>
+                </li></Link>
                 <li className="header__item header__icon-email">
-                    <a><IconEmail className="header__icon-email" /></a>
+                    <Link to="/contact"><IconEmail className="header__icon-email" /></Link>
                         <span className="header__icon-email--tooltip" onClick={() => copyEmailToClipboard()}>
                             You can click here to copy my email! :)
                             <input id="email" type="text" value="marianaluizamr@gmail.com" readOnly></input>

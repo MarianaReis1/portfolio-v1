@@ -4,7 +4,6 @@ import IconGithub from '../media/IconGithub'
 import IconNewWindow from '../media/IconNewWindow'
 
 export default function PauseMe (props) {
-    console.log(props)
     return (
         <div className="projects__items" >
             <img className="projects__items-img" src={IpTrackerImg} alt={props.data.gifAlt} />

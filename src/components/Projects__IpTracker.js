@@ -5,7 +5,6 @@ import IpTrackerImg from '../media/IpTrackerImg.png'
 
 
 export default function IpTracker (props) {
-    console.log(props.data.imgSrc)
     return (
         <div className="projects__items" >
             <img className="projects__items-img" src={IpTrackerImg} alt={props.data.gifAlt} />
