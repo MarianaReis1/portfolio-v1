@@ -1,5 +1,5 @@
 // import './Projects.css'
-import Button from './Button'
+import Button from './smallComponents/Button'
 import IpTracker from './Projects__IpTracker'
 import PauseMe from './Projects__PauseMe'
 import Insure from './Projects__Insure'
@@ -31,27 +31,27 @@ export const projectsList = [
     }
 ]
 
-export default function Projects (){
+export default function Projects() {
 
     return (
 
         <section className="projects">
-            <p className="projects__code-caracters projects__code-caracters--html">&#60;html&#62;</p>
-            <p className="projects__code-caracters content__code-caracters--body">&#60;body&#62;</p>
-            
-            <p className="projects__code-caracters projects__code-caracters--h2">&#60;h2&#62;</p>
-                <p className="projects__title">Welcome to my Projects</p>
-            <p className="projects__code-caracters projects__code-caracters--h2">&#60;/h2&#62;</p>
-            
-                <section className="projects__grid">
-                    <IpTracker data={projectsList[0]} />
-                    <PauseMe data={projectsList[1]} />
-                    <Insure  data={projectsList[2]} />
-                
-                </section>
-                <Button className="projects__download-button">DOWNLOAD CV</Button>
-            <p className="projects__code-caracters content__code-caracters--body">&#60;/body&#62;</p>
-            
+            <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
+            <p className="general__code-caracters general__code-caracters--body">&#60;body&#62;</p>
+
+            <p className="general__code-caracters general__code-caracters--h1">&#60;h1&#62;</p>
+            <h1 className="projects__title">Welcome to my Projects</h1>
+            <p className="general__code-caracters general__code-caracters--h1">&#60;/h1&#62;</p>
+
+            <section className="projects__grid">
+                <IpTracker data={projectsList[0]} />
+                <PauseMe data={projectsList[1]} />
+                <Insure data={projectsList[2]} />
+
+            </section>
+            <Button className="projects__download-button">DOWNLOAD CV</Button>
+            <p className="general__code-caracters general__code-caracters--body">&#60;/body&#62;</p>
+
         </section>
 
     )

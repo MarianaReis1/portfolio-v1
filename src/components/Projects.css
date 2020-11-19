@@ -1,35 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
-body {
-  background-color: #0D0D49;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-
 .projects {
   width: 100vw;
   height: calc(100vh - 60px);
   padding: 0 20px;
 }
 
-.projects__code-caracters {
-  font-family: "Courier Prime", monospace;
-  color: #49CBBF;
-  padding: 0.5rem 0;
-}
-
-.projects__code-caracters--html {
-  display: none;
-}
-
-.projects__code-caracters--h2 {
-  margin-left: 20px;
-}
-
 .projects__title {
   color: #fff;
-  margin: 0.5rem 0;
-  margin-left: 30px;
+  margin-left: 40px;
   font-weight: 400;
   font-size: 1.2rem;
 }

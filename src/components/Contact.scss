@@ -1,0 +1,65 @@
+@import '../shared/variables';
+
+.contact {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    padding: 0 20px;
+}
+
+.contact__title {
+    @include page-title;
+}
+
+.contact_paragraph {
+    width: 100%;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+
+
+.contact__form{
+
+    margin: 0.4rem 0;
+    
+    &--message {
+        background-color: transparent;
+        border-radius: 5px;
+        border: 3px solid #49CBBF;
+        color: #fff;
+        resize: none;
+
+        height: 120px;
+        width: 100%;
+        padding: 0.4rem 0.8rem;
+        margin: 0.3rem 0;
+    }
+
+
+    &--send {
+        background-color: transparent;
+        border-radius: 5px;
+        border: 3px solid #49CBBF;
+        color: #fff;
+        resize: none;
+        font-family: $fontFamily1;
+    
+        height: 40px;
+        width: 40%;
+        padding: 0.4rem 0.8rem;
+        margin: 0.3rem 0;
+    
+        &:hover {
+            background: #49CBBF;
+        }
+    }
+}
+
+
+.contact__button {
+    position: relative;
+    float: right;
+    margin: 0.3rem 0;
+
+}

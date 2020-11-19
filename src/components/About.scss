@@ -8,25 +8,7 @@
 }
 
 .about__content {
-    padding: 10px 20px;
-}
-
-.about__code-caracters {
-    font-family: $fontFamily2;
-    color: $primaryColor2;
-    padding: 0.4rem 0;
-
-    &--html{
-        display: none;
-    }
-
-    &--h2 {
-        margin-left: 20px;
-    }
-
-    &--p {
-        margin-left: 20px;
-    }
+    padding: 0px 20px;
 }
 
 .about__title,
@@ -35,8 +17,7 @@
 }
 
 .about__title {
-    font-size: 1.5rem;
-    margin-left: 30px;
+    @include page-title;
 }
 
 .about__paragraph {

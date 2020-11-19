@@ -18,7 +18,7 @@ function copyEmailToClipboard() {
     document.execCommand("copy");
 }
 
-export default function Header(){
+export default function Header() {
 
     const [isActive, setActive] = useState("false")
     const handleShowMenu = () => {
@@ -26,11 +26,11 @@ export default function Header(){
     }
 
     let isMobileSize = window.innerWidth < 768;
-    
+
     return (
         <div className="header">
             <Link to="/" ><img className="header__logo" src={Logo} alt="Logo" /></Link>
-            <ul className={isMobileSize && !isActive ? "header__list" : "header__list--desktop header__list--hidden" }>
+            <ul className={isMobileSize && !isActive ? "header__list" : "header__list--desktop header__list--hidden"}>
                 <Link to="/about"><li className="header__item">
                     <IconAbout />
                 </li></Link>
@@ -39,22 +39,20 @@ export default function Header(){
                 </li></Link>
                 <li className="header__item header__icon-email">
                     <Link to="/contact"><IconEmail className="header__icon-email" /></Link>
-                        <span className="header__icon-email--tooltip" onClick={() => copyEmailToClipboard()}>
-                            You can click here to copy my email! :)
+                    <span className="header__icon-email--tooltip" onClick={() => copyEmailToClipboard()}>
+                        You can click here to copy my email! :)
                             <input id="email" type="text" value="marianaluizamr@gmail.com" readOnly></input>
-                        </span>
+                    </span>
                 </li>
-                <a><li className="header__item">
+                <a href="https://github.com/MarianaReis1" target="_blank" rel="noreferrer"><li className="header__item">
                     <IconGithub />
                 </li></a>
-                <a><li className="header__item">
+                <a href="https://www.linkedin.com/in/mariana-reis-mr/" target="_blank" rel="noreferrer"><li className="header__item">
                     <IconLinkedin />
                 </li></a>
             </ul>
             <div className="header__burguerX-icon" >
-                
                 <img className="header__burguerX-icon-img" onClick={() => handleShowMenu()} src={isActive ? BurguerIcon : XIcon} alt="Hamburguer Icon" />
-                
             </div>
         </div>
     )

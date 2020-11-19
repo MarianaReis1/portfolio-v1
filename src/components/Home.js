@@ -1,35 +1,34 @@
 import './Home.css'
 import Image from '../media/main-img-home.png'
-import Header from './Header'
-import Button from './Button'
+import Button from './smallComponents/Button'
 
 
-export default function Home (){
+export default function Home() {
 
-return (
+    return (
 
-    <section className="home">
-        <img src={Image} className="home__img--desktop" alt="MultiTask Girl" />
-        <div className="home__content">
-            <p className="home__code-caracters home__code-caracters-html">&#60;html&#62;</p>    
-            <p className="home__code-caracters home__code-caracters--body">&#60;body&#62;</p>        
-                <div className="home__middle-content">
-                    <p className="home__code-caracters home__code-caracters--h2">&#60;h2&#62;</p>
-                    <p className="home__title"><span>Hey There,</span><span> I’m Mariana Reis</span></p>
-                    <p className="home__code-caracters home__code-caracters--h2">&#60;/h2&#62;</p>
-                    <p className="home__code-caracters home__code-caracters--h3">&#60;h3&#62;</p>
-                        <p className="home__subtitle">Front-end Web Developer</p>
-                    <p className="home__code-caracters home__code-caracters--h3">&#60;/h3&#62;</p> 
-                    <Button className="home__contact-button">CONTACT ME</Button>
-                </div>
-            <p className="home__code-caracters home__code-caracters--body-close">&#60;/body&#62;</p>
-            <p className="home__code-caracters">&#60;/html&#62;</p>    
-            <img src={Image} className="home__img" alt="MultiTask Girl" />
+        <section className="home">
+            <img src={Image} className="home__img--desktop" alt="MultiTask Girl" />
+            <div className="home__content">
+                <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
+                <p className="general__code-caracters general__code-caracters--body">&#60;body&#62;</p>
 
-        </div>
-    </section>
+                <p className="general__code-caracters general__code-caracters--h1">&#60;h1&#62;</p>
+                <h1 className="home__title">Hey There, I’m <span>Mariana Reis</span></h1>
+                <p className="general__code-caracters general__code-caracters--h1">&#60;/h1&#62;</p>
+                <p className="general__code-caracters general__code-caracters--h3">&#60;h3&#62;</p>
+                <p className="home__subtitle">Front-end Web Developer</p>
+                <p className="general__code-caracters general__code-caracters--h3">&#60;/h3&#62;</p>
+                <Button className="home__contact-button">CONTACT ME</Button>
 
-)
+                <p className="general__code-caracters general__code-caracters--body">&#60;/body&#62;</p>
+                <p className="general__code-caracters general__code-caracters--html">&#60;/html&#62;</p>
+                <img src={Image} className="home__img" alt="MultiTask Girl" />
+
+            </div>
+        </section>
+
+    )
 }
 
 // to do 

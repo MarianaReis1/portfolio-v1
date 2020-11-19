@@ -9,6 +9,7 @@ const Button = styled.button`
     font-weight: 500;
     padding: 0.4rem 0.8rem;
     min-width: 150px;
+    height: 40px;
 
     &:hover {
         background: #49CBBF;

@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "ACAA,OAAO,CAAC,uGAAI;AAiBZ,AAAA,IAAI,CAAC;EACD,gBAAgB,EAXJ,OAAO;EAYnB,WAAW,EAhBD,SAAS,EAAE,UAAU;EAiB/B,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,IAAI;CAClB;;ADnBG,AAAA,MAAM,GADV,IAAI,CACW;EACP,IAAI,ECII,OAAO;CDHlB",
+    "mappings": "ACAA,OAAO,CAAC,uGAAI;ADGR,AAAA,MAAM,GADV,IAAI,CACW;EACP,IAAI,ECII,OAAO;CDHlB",
     "sources": [
         "IconStyles.scss",
         "../shared/_variables.scss"

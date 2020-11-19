@@ -35,6 +35,5 @@ export default function ProjectInfo (){
             <p className="projects__code-caracters content__code-caracters--body">&#60;/body&#62;</p>
             
         </section>
-
     )
 }

@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
-body {
-  background-color: #0D0D49;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-}
-
 .home {
   width: 100vw;
   height: calc(100vh - 100px);
@@ -13,7 +6,7 @@ body {
 
 .home__content {
   height: 100%;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .home__img,
@@ -21,49 +14,24 @@ body {
   display: none;
 }
 
-.home__code-caracters {
-  font-family: "Courier Prime", monospace;
-  color: #49CBBF;
-  padding: 0.5rem 0;
-}
-
-.home__code-caracters--body {
-  margin-left: 20px;
-  position: relative;
-  top: 0;
-}
-
-.home__code-caracters--body-close {
-  margin-left: 20px;
-}
-
-.home__code-caracters--html {
-  position: relative;
-  top: 0;
-}
-
-.home__code-caracters--h2 {
+.home__title {
+  color: #fff;
   margin-left: 40px;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
-.home__code-caracters--h3 {
-  margin-left: 60px;
+.home__title span {
+  font-size: 1.8rem;
 }
 
-.home__title,
 .home__subtitle {
   color: #fff;
-  padding-left: 60px;
-  padding: 0.5rem 0;
-}
-
-.home__title {
-  font-size: 1.5rem;
-  margin-left: 60px;
-}
-
-.home__subtitle {
-  padding-left: 60px;
+  margin-left: 40px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-left: 40px;
+  font-size: 0.9rem;
 }
 
 .home__contact-button {
