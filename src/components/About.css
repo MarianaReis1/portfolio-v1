@@ -1,4 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0D0D49;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.general__code-caracters {
+  font-family: "Courier Prime", monospace;
+  color: #49CBBF;
+  padding: 0.7rem 0;
+}
+
+.general__code-caracters--body {
+  margin-left: 20px;
+  position: relative;
+  top: 0;
+}
+
+.general__code-caracters--h1 {
+  margin-left: 40px;
+}
+
+.general__code-caracters--h3 {
+  margin-left: 60px;
+}
+
+.general__code-caracters--p {
+  margin-left: 40px;
+}
+
+@media all and (min-height: 569px) {
+  .general__code-caracters {
+    padding: 0.8rem 0;
+  }
+  .general__code-caracters--body {
+    margin-left: 20px;
+    position: relative;
+    top: 0;
+  }
+  .general__code-caracters--h1 {
+    margin-left: 40px;
+  }
+  .general__code-caracters--h3 {
+    margin-left: 60px;
+  }
+  .general__code-caracters--p {
+    margin-left: 40px;
+  }
+}
+
 .about {
   display: block;
   width: 100vw;
@@ -18,9 +77,15 @@
 
 .about__title {
   color: #fff;
-  margin-left: 40px;
+  margin-left: 50px;
   font-weight: 400;
   font-size: 1.2rem;
+}
+
+@media all and (min-height: 569px) {
+  .about__title {
+    font-size: 1.6rem;
+  }
 }
 
 .about__paragraph {
@@ -28,29 +93,20 @@
   text-align: justify;
   font-size: 0.9rem;
   line-height: 1.6;
+  margin: 0 30px;
 }
 
-.about__download-button {
-  margin: 1rem auto;
+.about__button {
+  margin: 2rem auto;
   display: block;
-  font-size: 1rem;
 }
 
 @media all and (min-height: 569px) {
-  .about__content {
-    padding: 20px 30px;
-  }
-  .about__code-caracters {
-    padding: 0.8rem 0;
-  }
-  .about__title {
-    font-size: 1.9rem;
-  }
   .about__paragraph {
     font-size: 1.1rem;
-    margin: 1rem 0;
+    margin: 1rem 30px;
   }
-  .about__download-button {
+  .about__button {
     margin: 1.2rem auto;
   }
 }

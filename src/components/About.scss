@@ -25,33 +25,21 @@
     text-align: justify;
     font-size: 0.9rem;
     line-height: 1.6;
+    margin: 0 30px;
 }
 
-.about__download-button {
-    margin: 1rem auto;
+.about__button {
+    margin: 2rem auto;
     display: block;
-    font-size: 1rem;
 }
 
 @media all and (min-height: 569px){
-    .about__content {
-        padding: 20px 30px;
-    }
-
-    .about__code-caracters {
-        padding: 0.8rem 0;
-    }
-
-    .about__title {
-        font-size: 1.9rem;
-    }
-
     .about__paragraph {
         font-size: 1.1rem;
-        margin: 1rem 0;
+        margin: 1rem 30px;
     }
     
-    .about__download-button {
+    .about__button {
         margin: 1.2rem auto;
     }   
 }

@@ -6,6 +6,9 @@
     padding: 0 20px;
 }
 
+.contact__content {
+    margin: 0 20px;
+}
 .contact__title {
     @include page-title;
 }
@@ -20,7 +23,6 @@
 
 
 .contact__form{
-
     margin: 0.4rem 0;
     
     &--message {

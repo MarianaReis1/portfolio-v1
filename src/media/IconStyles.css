@@ -1,4 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0D0D49;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+}
+
+.general__code-caracters {
+  font-family: "Courier Prime", monospace;
+  color: #49CBBF;
+  padding: 0.7rem 0;
+}
+
+.general__code-caracters--body {
+  margin-left: 20px;
+  position: relative;
+  top: 0;
+}
+
+.general__code-caracters--h1 {
+  margin-left: 40px;
+}
+
+.general__code-caracters--h3 {
+  margin-left: 60px;
+}
+
+.general__code-caracters--p {
+  margin-left: 40px;
+}
+
+@media all and (min-height: 569px) {
+  .general__code-caracters {
+    padding: 0.8rem 0;
+  }
+  .general__code-caracters--body {
+    margin-left: 20px;
+    position: relative;
+    top: 0;
+  }
+  .general__code-caracters--h1 {
+    margin-left: 40px;
+  }
+  .general__code-caracters--h3 {
+    margin-left: 60px;
+  }
+  .general__code-caracters--p {
+    margin-left: 40px;
+  }
+}
+
 :hover > path {
   fill: #49CBBF;
 }

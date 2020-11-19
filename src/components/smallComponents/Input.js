@@ -14,14 +14,14 @@ const Input = styled.input`
     margin: 0.3rem 0;
 
     &:focus + label {
-        transform: scale(0.5) translateY(-16px) translateX(-125px);
+        transform: scale(0.5) translateY(-12px) translateX(-104px);
     }
 
     ${function ({ hasValue }) {
         console.log(hasValue)
         return hasValue && css`
             & + label {
-                transform: scale(0.5) translateY(-16px) translateX(-125px);
+                transform: scale(0.5) translateY(-12px) translateX(-104px);
             }
         `
     }}

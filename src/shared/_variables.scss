@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap');
 
 
+//--------VARIABLES---------------------------
+
 $fontFamily1: 'Poppins', sans-serif;  // on texts
 $fontFamily2: 'Courier Prime', monospace;  // on special code caracters
 $fontFamily3: 'Ruluko', sans-serif;  // on titles
@@ -16,9 +18,79 @@ $secondaryColor3: #182524 ; // Dark Grey
 $secondaryColor4: #060642; // Darker Blue
 
 
+
+//---------GENERAL CSS-------------------------
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: $primaryColor1;
+    font-family: $fontFamily1;
+    font-weight: 400;
+    font-size: 14px;
+    color: $secondaryColor1;
+}
+
 @mixin page-title() {
     color: #fff;
-    margin-left: 40px;
+    margin-left: 50px;
     font-weight: 400;
     font-size: 1.2rem;
+    @media all and (min-height: 569px){
+        font-size: 1.6rem;
+    }
+}
+
+.general__code-caracters {
+    font-family: $fontFamily2;
+    color: $primaryColor2;
+    padding: 0.7rem 0;
+
+    &--body {
+        margin-left: 20px;
+        position: relative;
+        top: 0;
+    }
+
+    &--h1 {
+        margin-left: 40px;
+    }
+
+    &--h3 {
+        margin-left: 60px;
+    }
+
+    &--p {
+        margin-left: 40px;
+    }
+}
+
+@media all and (min-height: 569px){
+    .general__code-caracters {
+        padding: 0.8rem 0;
+    
+        &--body {
+            margin-left: 20px;
+            position: relative;
+            top: 0;
+        }
+    
+        &--h1 {
+            margin-left: 40px;
+        }
+    
+        &--h3 {
+            margin-left: 60px;
+        }
+    
+        &--p {
+            margin-left: 40px;
+        }
+    }
+
 }
