@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom'
+
 import Header from './components/Header'
 import Home from './components/Home'
 import About from './components/About'
@@ -13,10 +14,10 @@ function App() {
       <Header />
 
       <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/Projects" component={Projects} />
-      <Route path="/ProjectPage" component={ProjectPage} />
+      <Route path="/About" component={About} />
+      <Route exact path="/Projects" component={Projects} />
       <Route path="/Contact" component={Contact} />
+      <Route path="/ProjectPage" component={ProjectPage} />
 
     </BrowserRouter>
   );
