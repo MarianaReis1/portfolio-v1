@@ -13,9 +13,9 @@ function App() {
     <BrowserRouter>
       <Header />
 
-      <Route exact path="/" component={Home} />
+      <Route exact="true" path="/" component={Home} />
       <Route path="/About" component={About} />
-      <Route exact path="/Projects" component={Projects} />
+      <Route exact="true" path="/Projects" component={Projects} />
       <Route path="/Contact" component={Contact} />
       <Route path="/ProjectPage" component={ProjectPage} />
 
