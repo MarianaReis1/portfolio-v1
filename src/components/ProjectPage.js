@@ -1,15 +1,15 @@
+import { Link } from 'react-router-dom'
+
 
 import './ProjectPage.css'
-import { projectsList } from './Projects'
-import IpTrackerImg from '../media/IpTrackerImg.png'
 import IconGithub from '../media/IconGithub'
 import IconNewWindow from '../media/IconNewWindow'
-// import IpTracker from './Projects__IpTracker'
-// import PauseMe from './Projects__PauseMe'
-// import Insure from './Projects__Insure'
+import Button from './smallComponents/Button'
 
 
-export default function ProjectInfo() {
+export default function ProjectPage(props) {
+    console.log(props.data)
+    console.log(props)
     return (
 
         <section className="projectPage">
@@ -17,12 +17,12 @@ export default function ProjectInfo() {
             <p className="general__code-caracters general__code-caracters--body">&#60;body&#62;</p>
 
             <p className="general__code-caracters general__code-caracters--h1">&#60;h1&#62;</p>
-            <h1 className="projectPage__title">{projectsList[0].title} InfoPage</h1>
+            <h1 className="projectPage__title">{props.data.title}</h1>
             <p className="general__code-caracters general__code-caracters--h1">&#60;/h1&#62;</p>
 
-            <img src={IpTrackerImg} className="projectPage__img" alt={projectsList[0].gitAlt} />
+            <img src={props.data.imgSrc} className="projectPage__img" alt={props.data.gitAlt} />
             <div className="projectPage__subtitle">
-                {projectsList[0].tools}
+                {props.data.tools}
             </div>
             <div className="projectPage_icons">
                 <IconGithub />
@@ -30,11 +30,14 @@ export default function ProjectInfo() {
 
             </div>
             <p className="projectPage_paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                {props.data.description}
             </p>
             <p className="general__code-caracters general__code-caracters--body">&#60;/body&#62;</p>
             <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
 
-        </section>
+            <Link to="/projects"><Button className="projects__download-button">GO BACK</Button></Link>
+
+        </section >
+
     )
 }
