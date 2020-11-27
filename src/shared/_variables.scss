@@ -40,11 +40,16 @@ body {
     color: #fff;
     margin-left: 50px;
     font-weight: 400;
-    font-size: 1.2rem;
-    @media all and (min-height: 569px){
-        font-size: 1.6rem;
-    }
+    font-size: 1.4rem;
 }
+
+@mixin page-subtitle() {
+    color: #fff;
+    margin-left: 50px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
 
 .general__code-caracters {
     font-family: $fontFamily2;
@@ -72,7 +77,8 @@ body {
 
 @media all and (min-height: 569px){
     .general__code-caracters {
-        padding: 0.8rem 0;
+        padding: 0.7rem 0;
+        font-size: 1rem;
     
         &--body {
             margin-left: 20px;

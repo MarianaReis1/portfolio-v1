@@ -40,7 +40,8 @@ body {
 
 @media all and (min-height: 569px) {
   .general__code-caracters {
-    padding: 0.8rem 0;
+    padding: 0.7rem 0;
+    font-size: 1rem;
   }
   .general__code-caracters--body {
     margin-left: 20px;

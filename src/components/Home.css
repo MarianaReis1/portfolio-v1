@@ -40,7 +40,8 @@ body {
 
 @media all and (min-height: 569px) {
   .general__code-caracters {
-    padding: 0.8rem 0;
+    padding: 0.7rem 0;
+    font-size: 1rem;
   }
   .general__code-caracters--body {
     margin-left: 20px;
@@ -60,7 +61,7 @@ body {
 
 .home {
   width: 100vw;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 60px);
 }
 
 .home__content {
@@ -77,32 +78,15 @@ body {
   color: #fff;
   margin-left: 50px;
   font-weight: 400;
-  font-size: 1.2rem;
-}
-
-@media all and (min-height: 569px) {
-  .home__title {
-    font-size: 1.6rem;
-  }
-}
-
-.home__title span {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 .home__subtitle {
   color: #fff;
   margin-left: 50px;
   font-weight: 400;
-  font-size: 1.2rem;
-  padding-left: 40px;
   font-size: 0.9rem;
-}
-
-@media all and (min-height: 569px) {
-  .home__subtitle {
-    font-size: 1.6rem;
-  }
+  padding-left: 20px;
 }
 
 .home__contact-button {
@@ -110,16 +94,21 @@ body {
   display: block;
 }
 
-.home__contact-button:active {
-  background: #49CBBF;
-}
-
 @media all and (min-height: 569px) {
   .home__content {
-    padding: 0 20px;
+    padding: 20px 30px;
   }
-  .home__code-caracters {
-    padding: 1rem 0;
+  .home__title {
+    font-size: 2rem;
+    padding: 0.9rem 0;
+  }
+  .home__subtitle {
+    font-size: 1.4rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+  .home__contact-button {
+    margin: 2rem auto;
   }
 }
 

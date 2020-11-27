@@ -2,7 +2,7 @@
 
 .home {
     width: 100vw;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 60px);
 }
 
 .home__content {
@@ -17,37 +17,38 @@
 
 .home__title {
     @include page-title;
-
-    span {
-        font-size: 1.8rem;
-    }
 }
 
 .home__subtitle {
-    @include page-title;
-    padding-left: 40px;
-    font-size: 0.9rem;
+    @include page-subtitle;
+    padding-left: 20px;
 }
 
 .home__contact-button {
     margin: 1rem auto;
     display: block;
-
-    &:active {
-        background: $primaryColor2;
-    }
 }
 
 @media all and (min-height: 569px){
 
     .home__content {
-        padding: 0 20px;
+        padding: 20px 30px;
     }
 
-    .home__code-caracters {
-        padding: 1rem 0;
+    .home__title {
+        font-size: 2rem;
+        padding: 0.9rem 0;
     }
-
+    
+    .home__subtitle {
+        font-size: 1.4rem;
+        padding-top: 0.9rem;
+        padding-bottom: 0.9rem;
+    }
+    
+    .home__contact-button {
+        margin: 2rem auto;
+    }
 }
 
 @media all and (min-width: 768px){

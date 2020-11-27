@@ -40,7 +40,8 @@ body {
 
 @media all and (min-height: 569px) {
   .general__code-caracters {
-    padding: 0.8rem 0;
+    padding: 0.7rem 0;
+    font-size: 1rem;
   }
   .general__code-caracters--body {
     margin-left: 20px;
@@ -79,13 +80,7 @@ body {
   color: #fff;
   margin-left: 50px;
   font-weight: 400;
-  font-size: 1.2rem;
-}
-
-@media all and (min-height: 569px) {
-  .about__title {
-    font-size: 1.6rem;
-  }
+  font-size: 1.4rem;
 }
 
 .about__paragraph {
