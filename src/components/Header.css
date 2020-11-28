@@ -1,64 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: #0D0D49;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  color: #fff;
-}
-
-.general__code-caracters {
-  font-family: "Courier Prime", monospace;
-  color: #49CBBF;
-  padding: 0.7rem 0;
-}
-
-.general__code-caracters--body {
-  margin-left: 20px;
-  position: relative;
-  top: 0;
-}
-
-.general__code-caracters--h1 {
-  margin-left: 40px;
-}
-
-.general__code-caracters--h3 {
-  margin-left: 60px;
-}
-
-.general__code-caracters--p {
-  margin-left: 40px;
-}
-
-@media all and (min-height: 569px) {
-  .general__code-caracters {
-    padding: 0.7rem 0;
-    font-size: 1rem;
-  }
-  .general__code-caracters--body {
-    margin-left: 20px;
-    position: relative;
-    top: 0;
-  }
-  .general__code-caracters--h1 {
-    margin-left: 40px;
-  }
-  .general__code-caracters--h3 {
-    margin-left: 60px;
-  }
-  .general__code-caracters--p {
-    margin-left: 40px;
-  }
-}
-
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -112,19 +52,9 @@ body {
 .header__item {
   display: inline-block;
   color: #fff;
-  content: '';
 }
 
-.header__item:hover {
-  color: #49CBBF;
-}
-
-.header__item svg:active {
-  fill: #49CBBF;
-  content: 'About';
-}
-
-.header__icon-email--tooltip {
+.header__item--email-tooltip {
   display: none;
 }
 
@@ -168,38 +98,39 @@ body {
     vertical-align: middle;
     font-size: 1.2rem;
   }
-  .header__icon-email {
+  .header__item--email {
     position: relative;
   }
-  .header__icon-email--tooltip {
+  .header__item--email-tooltip {
     visibility: hidden;
-    width: 230px;
-    background-color: #182524;
-    color: #fff;
+    width: 250px;
+    background-color: #49CBBF;
+    font-size: 1.1rem;
+    color: #182524;
     text-align: center;
     border-radius: 6px;
-    padding: 0.5rem 0.2rem;
+    padding: 0.5rem;
     cursor: pointer;
     position: absolute;
     z-index: 1;
-    top: 100%;
-    left: -94%;
+    top: 135%;
+    left: -100%;
   }
-  :hover > .header__icon-email--tooltip {
+  :hover > .header__item--email-tooltip {
     visibility: visible;
     display: block;
   }
-  .header__icon-email--tooltip::after {
+  .header__item--email-tooltip::after {
     content: " ";
     position: absolute;
     bottom: 100%;
     left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
+    margin-left: -10px;
+    border-width: 10px;
     border-style: solid;
-    border-color: transparent transparent #182524 transparent;
+    border-color: transparent transparent #49CBBF transparent;
   }
-  .header__icon-email--tooltip input {
+  .header__item--email-tooltip input {
     background-color: #182524;
     color: #182524;
     border: none;
@@ -207,22 +138,23 @@ body {
   }
 }
 
-@media all and (min-width: 1280px) {
+@media all and (min-width: 1200px) {
   .header__logo {
     height: 70px;
   }
   .header__item {
-    padding: 0 35px;
-    font-size: 1.5rem;
+    padding: 0 40px;
+    font-size: 2rem;
   }
-  .header__item--icon svg {
-    width: 40px;
+  .header__item svg {
+    width: 30px;
     height: auto;
   }
-  .header__icon-email--tooltip {
-    left: 0%;
+  .header__item--email-tooltip {
+    top: 105%;
+    left: -59%;
   }
-  .header__icon-email--tooltip input {
+  .header__item--email-tooltip input {
     display: none;
   }
 }
@@ -236,10 +168,10 @@ body {
   }
   .header__item {
     padding: 0 45px;
+    font-size: 2.7rem;
   }
-  .header__item--icon svg {
-    width: 50px;
-    height: auto;
+  .header__item--email-tooltip {
+    left: -50%;
   }
 }
 /*# sourceMappingURL=Header.css.map */

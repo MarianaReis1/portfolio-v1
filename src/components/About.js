@@ -1,10 +1,12 @@
 import './About.css'
+import Image from '../media/main-img-home.png'
 import Button from './smallComponents/Button'
 
 
 export default function HomeContent() {
     return (
         <section className="about">
+            <img src={Image} className="about__img" alt="MultiTask Girl" />
             <div className="about__content">
                 <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
                 <p className="general__code-caracters general__code-caracters--body">&#60;body&#62;</p>
@@ -18,7 +20,7 @@ export default function HomeContent() {
                     You can read more about my skills, education and much more in the pdf attached bellow |
                             </p>
                 <p className="general__code-caracters general__code-caracters--p">&#60;/p&#62;</p>
-                <Button className="about__button">DOWNLOAD CV</Button>
+                <Button className="about__download-button">DOWNLOAD CV</Button>
                 <p className="general__code-caracters general__code-caracters--body">&#60;/body&#62;</p>
                 <p className="general__code-caracters general__code-caracters--html">&#60;/html&#62;</p>
             </div>

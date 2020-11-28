@@ -31,26 +31,37 @@ export default function Header() {
         <div className="header">
             <Link to="/" ><img className="header__logo" src={Logo} alt="Logo" /></Link>
             <ul className={isMobileSize && !isActive ? "header__list" : "header__list--desktop header__list--hidden"}>
-                <Link to="/about"><li className="header__item">
-                    <IconAbout />
-                </li></Link>
-                <Link to="/projects"><li className="header__item">
-                    <IconWorks />
-                </li></Link>
-                <li className="header__item header__icon-email">
-                    <Link to="/contact"><IconEmail className="header__icon-email" /></Link>
-                    <span className="header__icon-email--tooltip" onClick={() => copyEmailToClipboard()}>
-                        You can click here to copy my email! :)
+                <Link to="/about">
+                    <li className="header__item">
+                        <IconAbout />
+                    </li>
+                </Link>
+                <Link to="/projects">
+                    <li className="header__item">
+                        <IconWorks />
+                    </li>
+                </Link>
+                <li className="header__item header__item--email">
+                    <Link to="/contact">
+                        <IconEmail className="header__item--email" />
+                    </Link>
+                    <span className="header__item--email-tooltip" onClick={() => copyEmailToClipboard()}>
+                        You can <strong>click here</strong> to copy my email or on the envelope to go to contact! :)
                             <input id="email" type="text" value="marianaluizamr@gmail.com" readOnly></input>
                     </span>
                 </li>
-                <a href="https://github.com/MarianaReis1" target="_blank" rel="noreferrer"><li className="header__item">
-                    <IconGithub />
-                </li></a>
-                <a href="https://www.linkedin.com/in/mariana-reis-mr/" target="_blank" rel="noreferrer"><li className="header__item">
-                    <IconLinkedin />
-                </li></a>
+                <a href="https://github.com/MarianaReis1" target="_blank" rel="noreferrer">
+                    <li className="header__item">
+                        <IconGithub />
+                    </li>
+                </a>
+                <a href="https://www.linkedin.com/in/mariana-reis-mr/" target="_blank" rel="noreferrer">
+                    <li className="header__item">
+                        <IconLinkedin />
+                    </li>
+                </a>
             </ul>
+
             <div className="header__burguerX-icon" >
                 <img className="header__burguerX-icon-img" onClick={() => handleShowMenu()} src={isActive ? BurguerIcon : XIcon} alt="Hamburguer Icon" />
             </div>

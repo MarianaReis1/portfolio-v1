@@ -1,5 +1,5 @@
 import React from 'react';
-// import { BrowserRouter } from 'react-router-dom'
+
 import './Projects.css'
 import ProjectsCard from './ProjectsCard'
 import Button from './smallComponents/Button'
@@ -37,7 +37,7 @@ export const projectsList = [
 export default function Projects() {
 
     return (
-        <section className="projects">
+        <section className="projects__content">
             <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
             <p className="general__code-caracters general__code-caracters--body">&#60;body&#62;</p>
 

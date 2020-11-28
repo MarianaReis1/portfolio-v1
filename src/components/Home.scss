@@ -1,13 +1,9 @@
 @import '../shared/variables';
 
-.home {
-    width: 100vw;
-    height: calc(100vh - 60px);
-}
-
 .home__content {
-    height: 100%;
-    padding: 0 20px;
+    width: 100vw;
+    padding: 10px 20px;
+    height: inherit;
 }
 
 .home__img,
@@ -25,79 +21,81 @@
 }
 
 .home__contact-button {
-    margin: 1rem auto;
+    margin: 1.5rem auto;
     display: block;
 }
 
-@media all and (min-height: 569px){
+@media all and (min-height: $breakpoint__mobile--height){
 
     .home__content {
         padding: 20px 30px;
     }
 
     .home__title {
-        font-size: 2rem;
+        font-size: 1.9rem;
         padding: 0.9rem 0;
     }
     
     .home__subtitle {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         padding-top: 0.9rem;
         padding-bottom: 0.9rem;
     }
     
     .home__contact-button {
-        margin: 2rem auto;
+        margin: 4rem auto;
     }
 }
 
-@media all and (min-width: 768px){
+@media all and (min-width: $breakpoint__tablet){
 
     .home__content {
-        padding: 25px 50px;
+        padding: 20px 50px;
     }
 
     .home__img {
         display: block;
-        width: 45%;
+        width: 55%;
         height: auto;
-        margin: auto;
+        margin: 1rem auto;
     }
 
-    .home__code-caracters {
-        padding: 1.5% 0;
-    }
-
-    
     .home__title {
         font-size: 2.3rem;
         margin-left: 60px;
+        padding: 0;
+        span {
+            font-size: 3rem;
+            padding: 0;
+        }
     }
    
    .home__subtitle { 
         font-size: 1.7rem;
-        margin-left: 20px;
+        margin-left: 60px;
+        padding: 0;
     }
 
     .home__contact-button {
-        margin: 2rem 60px;
-        font-size: 1.3rem;
+        margin: 3rem auto 5rem auto;
+        font-size: 1.2rem;
         width: 200px;
     }
 }
 
 
-@media all and (min-width: 1024px){
+@media all and (min-width: $breakpoint__desktop){
     .home {
         width: 100vw;
         display: grid;
         grid-template-columns: 35% 65%;
         justify-content: center;
-        height: calc(100vh - 130px);
     }
-    
+
     .home__content {
-        padding: 20px 50px 0 50px;
+        padding: 10px 50px;
+        width: 100%;
+        height: 80vh;
     }
 
     .home__img {
@@ -113,12 +111,33 @@
         margin: auto;
     }
 
-    .home__code-caracters {
-        font-family: $fontFamily2;
-        color: $primaryColor2;
-        padding-left: 40px;
-        padding: 1% 0;
+    .home__title {
+        font-size: 2.5rem;
+        margin-left: 60px;
+        span {
+            font-size: 3.5rem;
+        }
+    }
+   
+   .home__subtitle { 
+        font-size: 1.9rem;
+        margin-left: 60px;
+    }
+
+    .home__contact-button {
+        margin: 1.2rem;
+        font-size: 1.2rem;
+        height: 45px;
     }
 }
 
-// @media all and (min-width: 1440px){}
+    
+@media all and (min-width: $breakpoint__desktop--big){
+    .home {
+        grid-template-columns: 45% 55%;
+    }
+
+    .home__content {
+        padding: 20px 50px;
+    }
+}
