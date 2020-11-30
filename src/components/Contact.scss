@@ -1,12 +1,10 @@
 @import '../shared/variables';
 
 .contact {
-    width: 100vw;
-    height: calc(100vh - 60px);
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
-.contact__content {
+.contact__content { // formWrapper
     margin: 0 20px;
 }
 .contact__title {
@@ -22,7 +20,7 @@
 }
 
 
-.contact__form{
+.contact__form {
     margin: 0.4rem 0;
     
     &--message {
@@ -64,4 +62,14 @@
     float: right;
     margin: 0.3rem 0;
 
+}
+
+@media all and (min-height: $breakpoint__mobile--height){
+    .contact {
+        padding: 20px 30px;
+    }
+
+    .contact__title {
+        padding: 0.9rem 0;
+    }
 }

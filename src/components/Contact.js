@@ -26,7 +26,7 @@ export default function Contact() {
 
             <section className="contact__content">
                 <p className="contact_paragraph">
-                    If you have any questions or requests about project collaboration, please, feel free to send an email to marianaluizamr@gmail.com or reach out through the form below.
+                    If you have any questions, please, feel free to send an email to marianaluizamr@gmail.com or reach out through the form below.
                 </p>
 
                 <form className="contact__form" action="/contact.json">

@@ -19,6 +19,22 @@ a {
     text-decoration: none;
 } 
 
+// Centralising Styles - Pages size and design
+
+content {
+    width: 100vw;
+    padding: 10px 20px;
+    height: inherit;
+}
+
+
+
+
+
+
+
+
+// Centralising Styles -  Tags on all pages 
 .general__code-caracters {
     font-family: $fontFamily2;
     color: $primaryColor2;

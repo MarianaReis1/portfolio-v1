@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
 .projects__content {
   width: 100vw;
-  height: calc(100vh - 60px);
-  padding: 0 20px;
+  padding: 10px 20px;
+  height: inherit;
 }
 
 .projects__title {
@@ -45,7 +45,7 @@
   font-weight: 400;
 }
 
-.projects__icons {
+.projects__icons-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,9 +56,12 @@
           justify-content: space-between;
 }
 
-.projects__download-button {
-  margin: 2rem auto;
-  display: block;
+.projects__icons {
+  cursor: pointer;
+}
+
+.projects__icons :hover {
+  fill: #182524;
 }
 
 @media all and (min-height: 569px) {
@@ -67,9 +70,6 @@
   }
   .projects__title {
     padding: 0.9rem 0;
-  }
-  .projects__download-button {
-    margin: 1.2rem auto;
   }
 }
 
@@ -83,31 +83,36 @@
   .projects__grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: minmax(250px, auto) minmax(250px, auto);
-        grid-template-columns: minmax(250px, auto) minmax(250px, auto);
-    margin: 1rem 0;
+    -ms-grid-columns: minmax(200px, 270px) minmax(200px, 270px);
+        grid-template-columns: minmax(200px, 270px) minmax(200px, 270px);
+    grid-gap: 10px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 2rem auto;
   }
-  .projects__download-button {
-    margin: 2.5rem auto;
-    font-size: 1.2rem;
-    width: 200px;
+  .projects__items {
+    width: 100%;
+    height: auto;
+  }
+  .projects__items-img {
+    width: 90%;
+    height: 130px;
   }
 }
 
 @media all and (min-width: 1200px) {
+  .projects__content {
+    width: 100vw;
+    height: 100%;
+    padding: 0 70px;
+  }
   .projects__title {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .projects__grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: minmax(250px, auto) minmax(250px, auto) minmax(250px, auto) minmax(250px, auto);
-        grid-template-columns: minmax(250px, auto) minmax(250px, auto) minmax(250px, auto) minmax(250px, auto);
-    margin: 0;
-  }
-  .projects__download-button {
-    margin: 1.2rem auto;
-    font-size: 1.2rem;
+    -ms-grid-columns: minmax(220px, 260px) minmax(220px, 260px) minmax(220px, 260px) minmax(220px, 260px);
+        grid-template-columns: minmax(220px, 260px) minmax(220px, 260px) minmax(220px, 260px) minmax(220px, 260px);
   }
 }
 /*# sourceMappingURL=Projects.css.map */

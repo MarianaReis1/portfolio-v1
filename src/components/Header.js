@@ -1,6 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+
+
 import './Header.css'
+import '../shared/general__styles.css'
+
 import Logo from '../media/logo-green.png'
 import IconWorks from '../media/IconWorks'
 import IconAbout from '../media/IconAbout'
@@ -46,7 +50,7 @@ export default function Header() {
                         <IconEmail className="header__item--email" />
                     </Link>
                     <span className="header__item--email-tooltip" onClick={() => copyEmailToClipboard()}>
-                        You can <strong>click here</strong> to copy my email or on the envelope to go to contact! :)
+                        You can <strong>click here</strong> to copy my email :) or on the icon to go to contact!
                             <input id="email" type="text" value="marianaluizamr@gmail.com" readOnly></input>
                     </span>
                 </li>

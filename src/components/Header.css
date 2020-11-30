@@ -58,6 +58,10 @@ body {
   display: none;
 }
 
+.header__item :hover {
+  fill: #49CBBF;
+}
+
 @media all and (min-height: 569px) {
   .header {
     min-height: 70px;
@@ -77,16 +81,16 @@ body {
     min-height: 100px;
   }
   .header__logo {
-    height: 60px;
+    height: 50px;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 25px;
   }
   .header__list--desktop {
     display: block;
     position: relative;
     width: unset;
     float: right;
-    margin-top: 35px;
+    margin-top: 30px;
     margin-right: 50px;
     background-color: #060642;
   }
@@ -114,7 +118,7 @@ body {
     position: absolute;
     z-index: 1;
     top: 135%;
-    left: -100%;
+    left: -106%;
   }
   :hover > .header__item--email-tooltip {
     visibility: visible;
@@ -140,7 +144,12 @@ body {
 
 @media all and (min-width: 1200px) {
   .header__logo {
-    height: 70px;
+    height: 50px;
+    margin-left: 90px;
+    margin-top: 25px;
+  }
+  .header__list--desktop {
+    margin-right: 70px;
   }
   .header__item {
     padding: 0 40px;
@@ -152,10 +161,7 @@ body {
   }
   .header__item--email-tooltip {
     top: 105%;
-    left: -59%;
-  }
-  .header__item--email-tooltip input {
-    display: none;
+    left: -64%;
   }
 }
 

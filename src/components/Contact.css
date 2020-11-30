@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
 .contact {
-  width: 100vw;
-  height: calc(100vh - 60px);
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 
 .contact__content {
@@ -61,5 +59,14 @@
   position: relative;
   float: right;
   margin: 0.3rem 0;
+}
+
+@media all and (min-height: 569px) {
+  .contact {
+    padding: 20px 30px;
+  }
+  .contact__title {
+    padding: 0.9rem 0;
+  }
 }
 /*# sourceMappingURL=Contact.css.map */

@@ -8,7 +8,9 @@ body {
 }
 
 .about__content {
-  padding: 0px 20px;
+  width: 100vw;
+  padding: 10px 20px;
+  height: inherit;
 }
 
 .about__title {
@@ -82,7 +84,7 @@ body {
     width: 100%;
     height: auto;
     position: relative;
-    padding: 0px 50px;
+    padding: 0px 70px;
     margin: auto;
   }
   .about__content {
@@ -91,7 +93,7 @@ body {
     padding: 10px 50px;
   }
   .about__title {
-    font-size: 2.4rem;
+    font-size: 2rem;
     padding: 0;
   }
   .about__paragraph {

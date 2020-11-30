@@ -18,6 +18,12 @@ a {
   text-decoration: none;
 }
 
+content {
+  width: 100vw;
+  padding: 10px 20px;
+  height: inherit;
+}
+
 .general__code-caracters {
   font-family: "Courier Prime", monospace;
   color: #49CBBF;
@@ -82,4 +88,4 @@ a {
     padding: 0.7rem 0;
   }
 }
-/*# sourceMappingURL=generalStyle.css.map */
+/*# sourceMappingURL=general__styles.css.map */

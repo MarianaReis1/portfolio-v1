@@ -90,12 +90,12 @@
         display: grid;
         grid-template-columns: 35% 65%;
         justify-content: center;
+        margin: 10px;
     }
 
     .home__content {
-        padding: 10px 50px;
+        padding: 6% 70px;
         width: 100%;
-        height: 80vh;
     }
 
     .home__img {
@@ -107,20 +107,20 @@
         width: 100%;
         height: auto;
         position: relative;
-        padding: 0px 50px;
+        padding: 0px 70px;
         margin: auto;
     }
 
     .home__title {
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-left: 60px;
         span {
-            font-size: 3.5rem;
+            font-size: 2.7rem;
         }
     }
    
    .home__subtitle { 
-        font-size: 1.9rem;
+        font-size: 1.8rem;
         margin-left: 60px;
     }
 

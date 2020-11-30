@@ -2,35 +2,42 @@ import React from 'react';
 
 import './Projects.css'
 import ProjectsCard from './ProjectsCard'
-import Button from './smallComponents/Button'
 
 export const projectsList = [
     {
         title: "IP Tracker WebApp",
         name: "ipTracker",
+        path: "/projects/ipTracker",
+        imgSrc: "/IpTrackerImg.png",
+        imgAlt: "Ip Tracker Gif",
+        link: "http://ip-tracker.marianareis.co/",
+        githubLink: "https://github.com/MarianaReis1/IpTrackerReact",
+
+
         tools: "REACTJS | IPA | BEM | SASS",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna voluptate velit esse cillum dolore eu fugiat nulla.",
-        gitAlt: "Ip Tracker Gif",
-        imgSrc: "/IpTrackerImg.png",
-        path: "/projects/ipTracker"
     },
     {
         title: "PauseMe WebApp",
         name: "pauseMe",
+        path: "/projects/pauseMe",
+        imgSrc: "/PausemeImg.png",
+        imgAlt: "PauseMe Gif",
+
+
         tools: "REACTJS | IPA | BEM | SASS",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna voluptate velit esse cillum dolore eu fugiat nulla.",
-        gitAlt: "PauseMe Gif",
-        imgSrc: "/PausemeImg.png",
-        path: "/projects/pauseMe"
     },
     {
         title: "Insure WebPage",
         name: "insure",
-        tools: "VANILLA JS | BEM | SASS",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna voluptate velit esse cillum dolore eu fugiat nulla.",
-        gitAlt: "insure Gif",
+        path: "/projects/insure",
         imgSrc: "/InsureImg.png",
-        path: "/projects/insure"
+        imgAlt: "insure Gif",
+
+
+        tools: "VANILLA JS | CSS3 | BEM | SASS",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna voluptate velit esse cillum dolore eu fugiat nulla.",
     }
 ]
 
@@ -55,7 +62,6 @@ export default function Projects() {
                 }
             </section>
 
-            <Button className="projects__download-button">DOWNLOAD CV</Button>
             <p className="general__code-caracters general__code-caracters--body">&#60;/body&#62;</p>
             <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
 
