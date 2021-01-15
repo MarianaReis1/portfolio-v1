@@ -24,8 +24,8 @@ export const projectsList = [
         path: "/projects/pauseMe",
         imgSrc: "/PausemeImg.png",
         imgAlt: "PauseMe Gif",
-        // link: "http://ip-tracker.marianareis.co/",
-        // githubLink: "https://github.com/MarianaReis1/IpTrackerReact",
+        link: "http://pauseme.marianareis.co/",
+        githubLink: "https://github.com/MarianaReis1/pauseme-js",
 
 
         tools: "VANILLA JS | API | BEM | SASS",
@@ -38,8 +38,8 @@ export const projectsList = [
         path: "/projects/insure",
         imgSrc: "/InsureImg.png",
         imgAlt: "insure Gif",
-        // link: "http://ip-tracker.marianareis.co/",
-        // githubLink: "https://github.com/MarianaReis1/IpTrackerReact",
+        link: "https://marianareis1.github.io/insure/",
+        githubLink: "https://github.com/MarianaReis1/insure",
 
 
         tools: "VANILLA JS | SASS | BEM",
@@ -52,8 +52,8 @@ export const projectsList = [
         path: "/projects/portfolio",
         imgSrc: "/PortfolioImg.png",
         imgAlt: "portfolio Gif",
-        // link: "http://ip-tracker.marianareis.co/",
-        // githubLink: "https://github.com/MarianaReis1/IpTrackerReact",
+        link: "https://portfolio-ten-snowy.vercel.app/",
+        githubLink: "https://github.com/MarianaReis1/portfolio",
 
 
         tools: "REACTJS | BEM | SASS",
