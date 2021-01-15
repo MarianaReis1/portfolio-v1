@@ -21,9 +21,8 @@ body {
 }
 
 .about__paragraph {
-  color: #fff;
-  text-align: justify;
   font-size: 0.9rem;
+  text-align: justify;
   line-height: 1.6;
   margin: 0 30px;
 }

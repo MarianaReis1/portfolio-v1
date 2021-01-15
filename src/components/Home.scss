@@ -12,11 +12,11 @@
 }
 
 .home__title {
-    @include page-title;
+    @include title;
 }
 
 .home__subtitle {
-    @include page-subtitle;
+    @include subtitle;
     padding-left: 20px;
 }
 
