@@ -20,17 +20,18 @@ $secondaryColor4: #060642; // Darker Blue
 
 $breakpoint__mobile--height: 569px;
 $breakpoint__tablet: 768px;
-$breakpoint__desktop: 1200px;
+//1024px
+$breakpoint__desktop: 1200px; //1280
 $breakpoint__desktop--big: 1440px;
 
 //--------------------------------------
 
-@mixin page-title() {
-    color: #fff;
-    margin-left: 50px;
-    font-weight: 400;
-    font-size: 1.4rem;
-}
+// @mixin page-title() {
+//     color: #fff;
+//     margin-left: 50px;
+//     font-weight: 400;
+//     font-size: 1.4rem;
+// }
 
 @mixin title() {
     color: #fff;
@@ -39,25 +40,12 @@ $breakpoint__desktop--big: 1440px;
     font-size: 1.4rem;
 }
 
-
-// @mixin title__tablet() {
-//     font-size: 2rem;
+// @mixin page-subtitle() {
+//     color: #fff;
+//     margin-left: 50px;
+//     font-weight: 400;
+//     font-size: 1rem;
 // }
-
-// @mixin title__desktop() {
-//     font-size: 2.1rem;
-// }
-
-// @mixin title__desktop--big() {
-//     font-size: 2.1rem;
-// }
-
-@mixin page-subtitle() {
-    color: #fff;
-    margin-left: 50px;
-    font-weight: 400;
-    font-size: 1rem;
-}
 
 @mixin subtitle() {
     color: #fff;

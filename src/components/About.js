@@ -17,12 +17,9 @@ export default function HomeContent() {
                 <p className="about__paragraph">
                     Hello,
                     <br></br>
-                    <br></br>
                     My name is Mariana Reis and I am a Software Developer.
                     <br></br>
-                    <br></br>
                     Currently pursuing a Master’s Degree in Full Stack Web Development to expand skills and keep up-to-date on the industry's trends.
-                    <br></br>
                     <br></br>
                     Beyond that, I have been challenging myself in the Web Develpment World for over a year, always focusing on responsive designs and friendly-clean codes.
                 </p>

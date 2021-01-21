@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
 .projectPage__content {
   width: 100vw;
-  height: inherit;
   padding: 10px 20px;
+  height: inherit;
 }
 
 .projectPage__title {
@@ -18,26 +18,8 @@
   display: block;
 }
 
-.projectPage__subtitle {
-  color: #fff;
-  margin-left: 50px;
-  font-weight: 400;
-  font-size: 1rem;
-  display: block;
-  color: #fff;
-  text-align: center;
-}
-
-.projectPage__tools {
-  color: #fff;
-  font-weight: 400;
-  font-size: 1rem;
-  display: block;
-  color: #fff;
-  text-align: center;
-}
-
-.projectPage_icons {
+.projectPage__icons {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,36 +27,45 @@
   width: 150px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  cursor: pointer;
 }
 
-.projectPage_paragraph {
+.projectPage__icons :hover {
+  fill: #182524;
+}
+
+.projectPage__descriptions {
+  width: 85%;
+  margin: auto;
+}
+
+.projectPage__descriptions--paragraph {
   font-size: 0.8rem;
   text-align: justify;
   line-height: 1.6;
   margin: 1.2rem auto;
-  width: 85%;
 }
 
-.projectPage__techSheet {
+.projectPage__descriptions--tools {
   margin-top: 1rem;
   text-align: center;
 }
 
-.projectPage__techSheet--list {
+.projectPage__descriptions--list {
   list-style-type: none;
   text-align: center;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
-.projectPage__techSheet--items {
+.projectPage__descriptions--items {
   position: relative;
   display: inline-block;
   padding: 0.2rem 0.5rem;
 }
 
 .projectPage__goBack {
-  display: block;
   margin: 1.5rem auto;
+  display: block;
   cursor: pointer;
 }
 
@@ -86,18 +77,44 @@
     padding: 0.9rem 0;
     font-size: 2.3rem;
   }
-  .projectPage__tools {
-    font-size: 1.3rem;
+  .projectPage__img {
+    width: 65%;
   }
   .projectPage_icons {
     width: 200px;
   }
-  .projectPage_paragraph {
-    font-size: 1rem;
-    width: 65%;
+  .projectPage__descriptions {
+    width: 85%;
+    margin: auto;
+  }
+  .projectPage__descriptions--paragraph {
+    font-size: 1.1rem;
+  }
+  .projectPage__descriptions--tools {
+    font-size: 1.5rem;
+  }
+  .projectPage__descriptions--list {
+    font-size: 1.5rem;
+  }
+  .projectPage__descriptions--items {
+    padding: 0.5rem 1.5rem;
   }
   .projectPage__goBack {
     font-size: 1.2rem;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .projectPage__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projectPage__img {
+    width: 90%;
+  }
+  .projectPage__goBack {
+    margin: 2.5rem auto;
   }
 }
 /*# sourceMappingURL=ProjectPage.css.map */

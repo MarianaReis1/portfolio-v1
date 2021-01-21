@@ -5,7 +5,7 @@ import ProjectsCard from './ProjectsCard'
 
 export const projectsList = [
     {
-        title: "IP Tracker WebApp",
+        title: "IP Tracker Web App",
         name: "ipTracker",
         path: "/projects/ipTracker",
         imgSrc: "/IpTrackerImg.png",
@@ -16,10 +16,10 @@ export const projectsList = [
 
         tools: "REACTJS | API | SASS",
         description: "IpTracker is a beatiful simple Webapp to help you track IP and URLs. The UI/UX was concieved with a mobile first approach, taking advantage of ReactJs’s tools to keep it simple and to make best and fastes use of the API.",
-        techSheet: ["HTML5", "CSS3", "SASS", "BEM", "REACTJS", "API", "RESPONSIVE DESIGN", "ES6", "GIT", "GITHUB"]
+        techSheet: ["HTML5", "CSS3", "SASS", "BEM", "REACTJS", "API", "RESPONSIVE DESIGN", "ES6", "GIT", "GITHUB", "VERCEL"]
     },
     {
-        title: "PauseMe WebApp",
+        title: "PauseMe Web App",
         name: "pauseMe",
         path: "/projects/pauseMe",
         imgSrc: "/PausemeImg.png",
@@ -28,12 +28,17 @@ export const projectsList = [
         githubLink: "https://github.com/MarianaReis1/pauseme-js",
 
 
-        tools: "VANILLA JS | API | BEM | SASS",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna voluptate velit esse cillum dolore eu fugiat nulla.",
-        techSheet: ["HTML5", "CSS3", "SASS", "BEM", "API", "RESPONSIVE DESIGN", "ES6", "GIT", "GITHUB"]
+        tools: "JAVASCRIPT | SASS | ILLUSTRATOR",
+        description: `PauseMe is a breath guide web app. It has a friendly and clean UX Design. 
+                        The idea to build this web app came when I was starting to learn Vanilla JavaScrip, Responsiveness, and Design Concepts, 
+                        so this project allowed me to practice and improve these new abilities regularly. 
+                        Currently, I am working on the second phase of this project: a ReactJS PauseMe, where we can have a scalable application. 
+                        The main focus will be to expand the possibilities, such as allowing the inclusion of new scenes from the user side, having the option to turn off the breath guide, change the volume of the video, and so on.`,
+        techSheet: ["javascript", "html5", "css3", "sass", "illustrator", "git", "github"] //        font-size: 1.2rem;
+
     },
     {
-        title: "Insure WebPage",
+        title: "Insure Web Page",
         name: "insure",
         path: "/projects/insure",
         imgSrc: "/InsureImg.png",
@@ -42,9 +47,9 @@ export const projectsList = [
         githubLink: "https://github.com/MarianaReis1/insure",
 
 
-        tools: "VANILLA JS | SASS | BEM",
+        tools: "JAVASCRIPT | SASS | BEM",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna voluptate velit esse cillum dolore eu fugiat nulla.",
-        techSheet: ["HTML5", "CSS3", "SASS", "BEM", "RESPONSIVE DESIGN", "GIT", "GITHUB"]
+        techSheet: ["HTML5", "CSS3", "SASS", "BEM", "JAVASCRIPT", "RESPONSIVE DESIGN", "GIT", "GITHUB"]
     },
     {
         title: "Portfolio",
@@ -56,9 +61,9 @@ export const projectsList = [
         githubLink: "https://github.com/MarianaReis1/portfolio",
 
 
-        tools: "REACTJS | BEM | SASS",
+        tools: "REACTJS | FIGMA | SASS ",
         description: "This UI/UX was concieved with a mobile first approach. The idea behind this was to create a showcase of the projects that I have been working on in the past few months. The UI and the code behind it was kept simple, so the focus could go to the advantages that ReactJs can provide for simple applications.",
-        techSheet: ["REACTJS", "ES6", "FIGMA", "ILLUSTRATOR", "HTML5", "CSS3", "SASS", "BEM", "RESPONSIVE DESIGN", "GIT", "GITHUB"]
+        techSheet: ["REACTJS", "ES6", "FIGMA", "ILLUSTRATOR", "HTML5", "CSS3", "SASS", "BEM", "RESPONSIVE DESIGN", "GIT", "GITHUB", "VERCEL"]
     }
 ]
 

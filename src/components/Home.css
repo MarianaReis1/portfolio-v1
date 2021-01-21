@@ -25,9 +25,10 @@
   padding-left: 20px;
 }
 
-.home__contact-button {
+.home__viewWork-button {
   margin: 1.5rem auto;
   display: block;
+  cursor: pointer;
 }
 
 @media all and (min-height: 569px) {
@@ -43,7 +44,7 @@
     padding-top: 0.9rem;
     padding-bottom: 0.9rem;
   }
-  .home__contact-button {
+  .home__viewWork-button {
     margin: 4rem auto;
   }
 }
@@ -54,14 +55,13 @@
   }
   .home__img {
     display: block;
-    width: 55%;
-    height: auto;
-    margin: 1rem auto;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
   }
   .home__title {
     font-size: 2.3rem;
-    margin-left: 60px;
-    padding: 0;
+    padding: 10px 0;
   }
   .home__title span {
     font-size: 3rem;
@@ -72,8 +72,8 @@
     margin-left: 60px;
     padding: 0;
   }
-  .home__contact-button {
-    margin: 3rem auto 5rem auto;
+  .home__viewWork-button {
+    margin: 3rem auto;
     font-size: 1.2rem;
     width: 200px;
   }
@@ -84,40 +84,44 @@
     width: 100vw;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 35% 65%;
-        grid-template-columns: 35% 65%;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 10px;
+    padding: 10px;
   }
   .home__content {
-    padding: 6% 70px;
     width: 100%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: auto;
+    padding: 0;
   }
   .home__img {
     display: none;
   }
   .home__img--desktop {
     display: inline-block;
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding: 0px 70px;
+    width: auto;
+    height: calc(100vh - 120px);
+    max-height: 600px;
     margin: auto;
+    padding: 50px;
   }
   .home__title {
     font-size: 2rem;
-    margin-left: 60px;
+    padding: 0;
   }
   .home__title span {
-    font-size: 2.7rem;
+    font-size: 2.3rem;
   }
   .home__subtitle {
     font-size: 1.8rem;
     margin-left: 60px;
   }
-  .home__contact-button {
+  .home__viewWork-button {
     margin: 1.2rem;
     font-size: 1.2rem;
     height: 45px;
@@ -125,12 +129,8 @@
 }
 
 @media all and (min-width: 1440px) {
-  .home {
-    -ms-grid-columns: 45% 55%;
-        grid-template-columns: 45% 55%;
-  }
-  .home__content {
-    padding: 20px 50px;
+  .home__img--desktop {
+    height: calc(100vh - 140px);
   }
 }
 /*# sourceMappingURL=Home.css.map */

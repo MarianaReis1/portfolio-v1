@@ -20,13 +20,13 @@
     padding-left: 20px;
 }
 
-.home__contact-button {
+.home__viewWork-button {
     margin: 1.5rem auto;
     display: block;
+    cursor: pointer;
 }
 
 @media all and (min-height: $breakpoint__mobile--height){
-
     .home__content {
         padding: 20px 30px;
     }
@@ -42,28 +42,26 @@
         padding-bottom: 0.9rem;
     }
     
-    .home__contact-button {
+    .home__viewWork-button {
         margin: 4rem auto;
     }
 }
 
 @media all and (min-width: $breakpoint__tablet){
-
     .home__content {
         padding: 20px 50px;
     }
 
     .home__img {
         display: block;
-        width: 55%;
-        height: auto;
-        margin: 1rem auto;
+        width: 50%;
+        margin: auto;
+        padding: 20px;
     }
 
     .home__title {
         font-size: 2.3rem;
-        margin-left: 60px;
-        padding: 0;
+        padding: 10px 0;
         span {
             font-size: 3rem;
             padding: 0;
@@ -76,8 +74,8 @@
         padding: 0;
     }
 
-    .home__contact-button {
-        margin: 3rem auto 5rem auto;
+    .home__viewWork-button {
+        margin: 3rem auto;
         font-size: 1.2rem;
         width: 200px;
     }
@@ -88,14 +86,17 @@
     .home {
         width: 100vw;
         display: grid;
-        grid-template-columns: 35% 65%;
+        grid-template-columns: 50% 50%;
         justify-content: center;
-        margin: 10px;
+        padding: 10px;
     }
 
     .home__content {
-        padding: 6% 70px;
         width: 100%;
+        height: min-content;
+        margin: auto;
+        padding: 0;
+
     }
 
     .home__img {
@@ -104,18 +105,18 @@
 
     .home__img--desktop {
         display: inline-block;
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding: 0px 70px;
+        width: auto;
+        height: calc(100vh - 120px);
+        max-height: 600px;
         margin: auto;
+        padding: 50px;
     }
 
     .home__title {
         font-size: 2rem;
-        margin-left: 60px;
+        padding: 0;
         span {
-            font-size: 2.7rem;
+            font-size: 2.3rem;
         }
     }
    
@@ -124,7 +125,7 @@
         margin-left: 60px;
     }
 
-    .home__contact-button {
+    .home__viewWork-button {
         margin: 1.2rem;
         font-size: 1.2rem;
         height: 45px;
@@ -133,11 +134,7 @@
 
     
 @media all and (min-width: $breakpoint__desktop--big){
-    .home {
-        grid-template-columns: 45% 55%;
-    }
-
-    .home__content {
-        padding: 20px 50px;
+    .home__img--desktop {
+        height: calc(100vh - 140px);
     }
 }

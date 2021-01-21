@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 
 import './Home.css'
-// import '../shared/generalStyle.css'
 import Image from '../media/main-img-home.png'
 import Button from './smallComponents/Button'
 
@@ -20,10 +19,10 @@ export default function Home() {
                 <p className="general__code-caracters general__code-caracters--h1">&#60;/h1&#62;</p>
                 <p className="general__code-caracters general__code-caracters--h3">&#60;h3&#62;</p>
                 <p className="home__subtitle">
-                    Software Developer.
+                    Software Developer
                 </p>
                 <p className="general__code-caracters general__code-caracters--h3">&#60;/h3&#62;</p>
-                <Link to="/projects"><Button className="home__contact-button">VIEW MY WORK</Button></Link>
+                <Link to="/projects"><Button className="home__viewWork-button">VIEW MY WORK</Button></Link>
 
                 <img src={Image} className="home__img" alt="MultiTask Girl" />
                 <p className="general__code-caracters general__code-caracters--body">&#60;/body&#62;</p>
@@ -34,6 +33,3 @@ export default function Home() {
 
     )
 }
-
-// to do 
-    //include typewriter effect maybe using this > npm i typewriter-effect
