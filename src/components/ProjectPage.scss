@@ -10,22 +10,24 @@
     @include title
 }
 
-.projectPage__img {
-    width: 85%;
-    margin: 1rem auto;
-    display: block;
-}
-
-.projectPage__icons {
-    cursor: pointer;
-    :hover {
-        fill: $secondaryColor3;
+.projectPage__images {
+    &--gif {
+        width: 85%;
+        margin: 1rem auto;
+        display: block;
     }
 
-    display: flex;
-    margin: 0.6rem auto;
-    width: 150px;
-    justify-content: space-around;
+    &--icons {
+        cursor: pointer;
+        :hover {
+            fill: $primaryColor2;
+        }
+        
+        display: flex;
+        justify-content: space-around;
+        margin: 0.6rem auto;
+        width: 150px;
+    }
 }
 
 .projectPage__descriptions {
@@ -33,28 +35,29 @@
     margin: auto;
 
     &--paragraph {
-        font-size: 0.8rem;
+        font-size: 1rem;
         text-align: justify;
-        line-height: 1.6;
+        line-height: 1.8;
         margin: 1.2rem auto;
     }
     
     &--tools {
-        margin-top: 1rem;
+        margin: 1rem;
+        font-size: 1.2rem;
         text-align: center;
     }
 
     &--list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
         list-style-type: none;
-        text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         cursor: pointer;
     }
 
     &--items {
-        position: relative;
-        display: inline-block;
-        padding: 0.2rem 0.5rem;
+        margin: 0.3rem 0.9rem;
     }
 }
 
@@ -62,6 +65,7 @@
     margin: 1.5rem auto;
     display: block;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 @media all and (min-width: $breakpoint__tablet){
@@ -74,12 +78,18 @@
         font-size: 2.3rem;
     }
 
-    .projectPage__img {
-        width: 65%;
-    }
+    .projectPage__images {
+        &--gif {
+            width: 65%;
+        }
 
-    .projectPage_icons {
-        width: 200px;
+        &--icons {
+            width: 200px;
+            & > a > svg {
+                height: 40px;
+                width: 40px;
+            }
+        }
     }
 
     .projectPage__descriptions {
@@ -95,7 +105,8 @@
         }
     
         &--list {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
+            margin: 0 -2rem;
         }
     
         &--items {
@@ -114,8 +125,12 @@
         display: flex;
     }
 
-    .projectPage__img {
-        width: 90%;
+    .projectPage__images {
+        align-self: center;
+        
+        &--gif {
+            width: 90%;
+        }
     }
 
 

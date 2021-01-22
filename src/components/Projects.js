@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './Projects.css'
 import ProjectsCard from './ProjectsCard'
@@ -29,12 +30,19 @@ export const projectsList = [
 
 
         tools: "JAVASCRIPT | SASS | ILLUSTRATOR",
-        description: `PauseMe is a breath guide web app. It has a friendly and clean UX Design. 
-                        The idea to build this web app came when I was starting to learn Vanilla JavaScrip, Responsiveness, and Design Concepts, 
-                        so this project allowed me to practice and improve these new abilities regularly. 
-                        Currently, I am working on the second phase of this project: a ReactJS PauseMe, where we can have a scalable application. 
-                        The main focus will be to expand the possibilities, such as allowing the inclusion of new scenes from the user side, having the option to turn off the breath guide, change the volume of the video, and so on.`,
-        techSheet: ["javascript", "html5", "css3", "sass", "illustrator", "git", "github"] //        font-size: 1.2rem;
+        description: `PauseMe is a breath guide web application.
+        The idea to build this web app came when I was starting to learn JavaScript, along with RESPONSIVE DESIGN and DESIGN SYSTEM. 
+        Currently, I am working on the second phase of this project: a ReactJS PauseMe, where we can have a scalable and improved application.
+        The main focus will be to expand the possibilities, such as allowing the inclusion of new scenes from the user side, 
+        having the option to turn off the breath guide, change the volume of the video, and so on.
+        `,
+
+        //  
+        // so this project allowed me to practice and improve these new abilities regularly. 
+
+        // Currently, I am working on the second phase of this project: a ReactJS PauseMe, where we can have a scalable application. 
+        // The main focus will be to expand the possibilities, such as allowing the inclusion of new scenes from the user side, having the option to turn off the breath guide, change the volume of the video, and so on.`,
+        techSheet: ["javascript", "html5", "css3", "sass", "illustrator", "git", "github"]
 
     },
     {
@@ -80,10 +88,10 @@ export default function Projects() {
             <section className="projects__grid">
                 {
                     projectsList.map((proj) => (
-                        <ProjectsCard
+                        <Link to={`/projects/${proj.name}`}><ProjectsCard
                             data={proj}
                             key={proj.name}
-                        />
+                        /></Link>
                     ))
                 }
             </section>

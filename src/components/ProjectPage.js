@@ -20,11 +20,11 @@ export default function ProjectPage(props) {
             <p className="general__code-caracters general__code-caracters--h1">&#60;/h1&#62;</p>
             <section className="projectPage__wrapper">
 
-                <section className="projectPage__imgAndIcon">
-                    <img src={props.data.imgSrc} className="projectPage__img" alt={props.data.gitAlt} />
-                    <div className="projectPage__icons">
-                        <Link to={props.data.link}><IconGithub /></Link>
-                        <IconNewWindow />
+                <section className="projectPage__images">
+                    <img src={props.data.imgSrc} className="projectPage__images--gif" alt={props.data.gitAlt} />
+                    <div className="projectPage__images--icons">
+                        <a href={props.data.githubLink} rel="noreferrer" target="_blank"><IconGithub /></a>
+                        <a href={props.data.link} rel="noreferrer" target="_blank"><IconNewWindow /></a>
                     </div>
                 </section>
 
@@ -32,7 +32,7 @@ export default function ProjectPage(props) {
                     <p className="projectPage__descriptions--paragraph">
                         {props.data.description}
                     </p>
-                    <p className="projectPage__descriptions--tools">TOOLS</p>
+                    <p className="projectPage__descriptions--tools">MAIN TOOLS</p>
                     <ul className="projectPage__descriptions--list">
                         {props.data.techSheet.map((tech) => (
                             <li key={tech} className="projectPage__descriptions--items">
