@@ -26,12 +26,6 @@ $breakpoint__desktop--big: 1440px;
 
 //--------------------------------------
 
-// @mixin page-title() {
-//     color: #fff;
-//     margin-left: 50px;
-//     font-weight: 400;
-//     font-size: 1.4rem;
-// }
 
 @mixin title() {
     color: #fff;
@@ -40,16 +34,10 @@ $breakpoint__desktop--big: 1440px;
     font-size: 1.4rem;
 }
 
-// @mixin page-subtitle() {
-//     color: #fff;
-//     margin-left: 50px;
-//     font-weight: 400;
-//     font-size: 1rem;
-// }
 
 @mixin subtitle() {
     color: #fff;
     margin-left: 50px;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }

@@ -60,8 +60,6 @@
     position: relative;
     float: right;
     margin: 0.3rem 0;
-    font-size: 1rem;
-
 }
 
 @media all and (min-height: $breakpoint__mobile--height){
@@ -70,6 +68,7 @@
     }
 
     .contact__title {
+        font-size: 1.7rem;
         padding: 0.9rem 0;
     }
 }

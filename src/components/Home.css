@@ -21,7 +21,7 @@
   color: #fff;
   margin-left: 50px;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding-left: 20px;
 }
 
@@ -29,7 +29,6 @@
   margin: 1.5rem auto;
   display: block;
   cursor: pointer;
-  font-size: 1rem;
 }
 
 @media all and (min-height: 569px) {
@@ -37,16 +36,16 @@
     padding: 20px 30px;
   }
   .home__title {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     padding: 0.9rem 0;
   }
   .home__subtitle {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     padding-top: 0.9rem;
     padding-bottom: 0.9rem;
   }
   .home__viewWork-button {
-    margin: 4rem auto;
+    margin: 2.1rem auto;
   }
 }
 
@@ -64,7 +63,7 @@
     font-size: 2.3rem;
     padding: 10px 0;
   }
-  .home__title span {
+  .home__title > p > span {
     font-size: 3rem;
     padding: 0;
   }

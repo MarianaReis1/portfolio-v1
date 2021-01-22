@@ -28,7 +28,6 @@ body {
 .about__download-button {
     margin: 1.5rem auto;
     display: block;
-    font-size: 1rem;
 }
 
 @media all and (min-height: $breakpoint__mobile--height){
@@ -37,7 +36,7 @@ body {
     }
 
     .about__title {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
         padding: 0.9rem 0;
     }
     

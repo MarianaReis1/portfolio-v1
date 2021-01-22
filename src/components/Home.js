@@ -15,7 +15,10 @@ export default function Home() {
                 <p className="general__code-caracters general__code-caracters--body">&#60;body&#62;</p>
 
                 <p className="general__code-caracters general__code-caracters--h1">&#60;h1&#62;</p>
-                <h1 className="home__title">Hey There, I’m <span>Mariana Reis</span></h1>
+                <h1 className="home__title">
+                    <p >Hey There,</p>
+                    <p >I’m <span>Mariana Reis</span></p>
+                </h1>
                 <p className="general__code-caracters general__code-caracters--h1">&#60;/h1&#62;</p>
                 <p className="general__code-caracters general__code-caracters--h3">&#60;h3&#62;</p>
                 <p className="home__subtitle">

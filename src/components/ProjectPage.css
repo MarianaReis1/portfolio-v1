@@ -72,7 +72,16 @@
   margin: 1.5rem auto;
   display: block;
   cursor: pointer;
-  font-size: 1rem;
+}
+
+@media all and (min-height: 569px) {
+  .projectPage {
+    padding: 20px 30px;
+  }
+  .projectPage__title {
+    font-size: 1.7rem;
+    padding: 0.9rem 0;
+  }
 }
 
 @media all and (min-width: 768px) {
