@@ -1,15 +1,12 @@
+import React from 'react'
 import { Link } from 'react-router-dom'
 
-
-import './ProjectPage.css'
-import IconGithub from '../media/IconGithub'
-import IconNewWindow from '../media/IconNewWindow'
-import Button from './smallComponents/Button'
+import '../styles/ProjectPage.css'
+import IconGithub from './icons/IconGithub'
+import IconNewWindow from './icons/IconNewWindow'
+import Button from './smallerComponents/Button'
 
 export default function ProjectPage(props) {
-    console.log(props.data)
-    console.log(props)
-
     return (
         <section className="projectPage__content">
             <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
@@ -32,7 +29,7 @@ export default function ProjectPage(props) {
                     <p className="projectPage__descriptions--paragraph">
                         {props.data.description}
                     </p>
-                    <p className="projectPage__descriptions--tools">MAIN TOOLS</p>
+                    <p className="projectPage__descriptions--tools">TECHNOLOGY STACK</p>
                     <ul className="projectPage__descriptions--list">
                         {props.data.techSheet.map((tech) => (
                             <li key={tech} className="projectPage__descriptions--items">

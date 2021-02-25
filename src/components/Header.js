@@ -2,24 +2,27 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 
-import './Header.css'
-import '../shared/general__styles.css'
+import '../styles/Header.css'
+import '../styles/general__styles.css'
 
-import Logo from '../media/logo-green.png'
-import IconWorks from '../media/IconWorks'
-import IconAbout from '../media/IconAbout'
-import IconEmail from '../media/IconEmail'
-import IconGithub from '../media/IconGithub'
-import IconLinkedin from '../media/IconLinkedin'
-import BurguerIcon from '../media/burguer-icon.png'
-import XIcon from '../media/x-icon.png'
+import Logo from '../media/logo.png'
+import IconBurguer from '../media/iconBurguer.png'
+import IconX from '../media/iconX.png'
+import IconWorks from './icons/IconWorks'
+import IconAbout from './icons/IconAbout'
+import IconEmail from './icons/IconEmail'
+import IconGithub from './icons/IconGithub'
+import IconLinkedin from './icons/IconLinkedin'
 
 
 function copyEmailToClipboard() {
-    let email = document.querySelector('#email')
-    console.log(email);
+    const email = document.querySelector('#email');
+    let tooltipMessage = document.querySelector('.header__item--email-tooltipMessage');
+
     email.select()
     document.execCommand("copy");
+    console.log(tooltipMessage.innerHTML)
+    tooltipMessage.innerHTML = "Email Copied"
 }
 
 export default function Header() {
@@ -50,8 +53,8 @@ export default function Header() {
                         <IconEmail className="header__item--email" />
                     </Link>
                     <span className="header__item--email-tooltip" onClick={() => copyEmailToClipboard()}>
-                        You can <strong>click here</strong> to copy my email :) or on the icon to go to contact!
-                            <input id="email" type="text" value="marianaluizamr@gmail.com" readOnly></input>
+                        <p className="header__item--email-tooltipMessage">You can click <strong>here</strong> to copy my email or on the icon to go to contact page!</p>
+                        <input id="email" type="text" value="marianaluizamr@gmail.com" readOnly></input>
                     </span>
                 </li>
                 <a href="https://github.com/MarianaReis1" target="_blank" rel="noreferrer">
@@ -67,11 +70,8 @@ export default function Header() {
             </ul>
 
             <div className="header__burguerX-icon" >
-                <img className="header__burguerX-icon-img" onClick={() => handleShowMenu()} src={isActive ? BurguerIcon : XIcon} alt="Hamburguer Icon" />
+                <img className="header__burguerX-icon-img" onClick={() => handleShowMenu()} src={isActive ? IconBurguer : IconX} alt="Hamburguer Icon" />
             </div>
         </div>
     )
 }
-
-// to do list :
-    // add links

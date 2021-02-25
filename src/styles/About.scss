@@ -1,0 +1,131 @@
+@import "../styles/variables";
+@import "../styles/aboutImageEffect";
+
+body {
+  overflow-x: hidden;
+}
+
+.about__img {
+  display: none;
+}
+
+.about__content {
+  width: 100vw;
+  padding: 10px 20px;
+  height: inherit;
+}
+
+.about__title {
+  @include title;
+}
+
+.about__paragraph {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.8;
+  margin: 0 30px;
+}
+
+.about__download-button {
+  margin: 1.5rem auto;
+  display: block;
+  cursor: pointer;
+}
+
+@media all and (min-width: $bp__small) {
+  .about__content {
+    padding: 20px 30px;
+  }
+
+  .about__title {
+    font-size: 1.7rem;
+    padding: 0.9rem 0;
+  }
+
+  .about__paragraph {
+    font-size: 1.1rem;
+    margin: 1rem 30px;
+  }
+
+  .about__download-button {
+    margin: 1.2rem auto;
+  }
+}
+
+@media all and (min-width: $bp__medium) {
+  .about__content {
+    padding: 20px 50px;
+  }
+
+  .about__title {
+    font-size: 2.3rem;
+    padding: 0.9rem 0;
+  }
+
+  .about__paragraph {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 2.2;
+  }
+
+  .about__download-button {
+    margin: 2rem auto;
+    font-size: 1.1rem;
+    width: 215px;
+  }
+}
+
+@media all and (min-width: $bp__large) {
+  .about {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    padding: 10px 30px;
+  }
+
+  .about__content {
+    width: 100%;
+    height: min-content;
+    margin: auto;
+    padding: 0;
+  }
+
+  .about__img {
+    display: inline-block;
+    max-height: 600px;
+    height: 65%;
+    width: auto;
+    margin: auto;
+  }
+
+  .about__title {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .about__paragraph {
+    margin: 0.2rem 30px;
+    margin-left: 60px;
+    line-height: 2;
+  }
+
+  .about__download-button {
+    margin: 1.2rem;
+    font-size: 1.2rem;
+    height: 45px;
+  }
+}
+
+@media all and (min-width: $bp__xlarge) {
+  .about__img {
+    height: calc(100vh - 140px);
+  }
+}
+
+@media all and (min-width: $bp__xxlarge) {
+  .about {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}

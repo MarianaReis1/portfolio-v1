@@ -1,12 +1,13 @@
-import './About.css'
-import Image from '../media/main-img-home.png'
-import Button from './smallComponents/Button'
+import '../styles/About.css'
+import AboutImage from './smallerComponents/AboutImage'
+import Button from './smallerComponents/Button'
 
 
 export default function HomeContent() {
+    let isDesktop = window.innerWidth > 1024;
     return (
         <section className="about">
-            <img src={Image} className="about__img" alt="MultiTask Girl" />
+            { isDesktop ? <AboutImage className="about__img"/> : ""}
             <div className="about__content">
                 <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
                 <p className="general__code-caracters general__code-caracters--body">&#60;body&#62;</p>
@@ -32,5 +33,3 @@ export default function HomeContent() {
     )
 }
 
-// to do 
-    //include typewriter effect maybe using this > npm i typewriter-effect

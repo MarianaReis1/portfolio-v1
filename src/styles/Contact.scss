@@ -1,0 +1,144 @@
+@import "../styles/variables";
+@import "../styles/contactImageEffect";
+
+.contact {
+  padding: 10px 20px;
+}
+
+.contact__title {
+  @include title;
+}
+
+.contact_paragraph {
+  font-size: 0.9rem;
+  text-align: justify;
+  line-height: 1.8;
+  margin: 1rem 20px;
+}
+
+.contact__form {
+  margin: 0.7rem 20px;
+
+  &--input {
+    background-color: transparent;
+    border-radius: 70px;
+    border: 3px solid #49cbbf;
+    color: #fff;
+
+    height: 40px;
+    padding: 0.4rem 0.8rem;
+    width: 100%;
+    margin: 0.3rem 0;
+
+    &[type="text"]::placeholder,
+    &[type="email"]::placeholder {
+      font-family: $fontFamily1;
+      color: $secondaryColor1;
+      opacity: 1;
+    }
+  }
+
+  &--message {
+    border-radius: 25px;
+    height: 120px;
+
+    &[type="textarea"]::placeholder {
+      font-family: $fontFamily1;
+      color: $secondaryColor1;
+      opacity: 1;
+    }
+  }
+
+  &--send {
+    width: 35%;
+    float: right;
+    font-size: 1rem;
+    &:hover {
+      background: #49cbbf;
+      cursor: pointer;
+    }
+  }
+}
+
+.contact__img {
+  display: none;
+}
+
+.contact__button {
+  position: relative;
+  float: right;
+  margin: 0.3rem 0;
+}
+
+@media all and (min-width: $bp__small) {
+  .contact {
+    padding: 20px 30px;
+  }
+
+  .contact__title {
+    font-size: 1.7rem;
+    padding: 0.9rem 0;
+  }
+
+  .contact_paragraph {
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: $bp__medium) {
+  .contact {
+    padding: 20px 50px;
+  }
+
+  .contact__title {
+    font-size: 2.3rem;
+    padding: 0.9rem 0;
+  }
+
+  .contact_paragraph {
+    font-size: 1.3rem;
+    margin: 1rem 50px;
+  }
+
+  .contact__form {
+    margin: 1.5rem 5rem;
+  }
+}
+
+@media all and (min-width: $bp__large) {
+  .contact {
+    width: 100%;
+    height: min-content;
+    margin: auto;
+    padding: 10px 90px;
+  }
+
+  .contact__wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+  }
+
+  .contact__content {
+    width: 100%;
+  }
+
+  .contact__img {
+    display: inline-block;
+    width: 75%;
+    max-width: 515px;
+    height: auto;
+    margin: auto;
+  }
+}
+
+// @media all and (min-width: $bp__xlarge) {
+
+//   }
+
+@media all and (min-width: $bp__xxlarge) {
+  .contact {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}

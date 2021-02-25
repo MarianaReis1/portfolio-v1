@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
+
+//--------VARIABLES AND BREAKPOINTS AND MIXINGS---------------------------
+
+$fontFamily1: "Poppins", sans-serif; // on texts
+$fontFamily2: "Courier Prime", monospace; // on code caracters
+$fontFamily3: "Ruluko", sans-serif; // on titles
+
+$primaryColor1: #0d0d49; // Dark Blue
+$primaryColor2: #49cbbf; // Light Blue
+$primaryColor3: #8f87c0; // Light Purple
+
+$secondaryColor1: #fff; //White
+$secondaryColor2: #37474f; // Light Grey
+$secondaryColor3: #182524; // Dark Grey
+$secondaryColor4: #060642; // Darker Blue
+
+//--------------------------------------
+
+$breakpoint__mobile--height: 569px;
+$breakpoint__tablet: 768px;
+$breakpoint__desktop: 1200px;
+$breakpoint__desktop--big: 1440px;
+$breakpoint__desktop--all-bigger: 1600px;
+
+// Breakpoints
+$bp__small: 360px;
+$bp__medium: 768px;
+$bp__large: 1024px;
+$bp__xlarge: 1366px;
+$bp__xxlarge: 1920px;
+
+//--------------------------------------
+
+@mixin title() {
+  color: #fff;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+@mixin subtitle() {
+  color: #fff;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 1.1rem;
+}

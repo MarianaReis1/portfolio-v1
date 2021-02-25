@@ -1,47 +1,69 @@
-import { useState } from 'react'
-import './Projects.css'
-import './Contact.css'
-import Input from './smallComponents/Input'
-import LabelText, { Label } from './smallComponents/LabelText'
+import React, { Component } from 'react'
 
-export default function Contact() {
-
-    let [isValue, setIsValue] = useState("");
-    let [isEmail, setIsEmail] = useState("");
-    let [isMessage, setIsMessage] = useState("");
+import '../styles/Contact.css'
+import ContactImage from './smallerComponents/ContactImage'
 
 
-    const nameHasValue = Boolean(isValue.length);
-    const emailHasValue = Boolean(isEmail.length);
-    const messageHasValue = Boolean(isMessage.length);
+export default class Contact extends Component {
 
-    return (
-        <section className="contact">
-            <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
-            <p className="general__code-caracters general__code-caracters--body">&#60;body&#62;</p>
+    constructor() {
+        super()
 
-            <p className="general__code-caracters general__code-caracters--h1">&#60;h1&#62;</p>
-            <h1 className="contact__title">Contact me</h1>
-            <p className="general__code-caracters general__code-caracters--h1">&#60;/h1&#62;</p>
+        this.state = {
+            name: '',
+            email: '',
+            message: ''
+        }
+    }
 
-            <section className="contact__content">
-                <p className="contact_paragraph">
-                    If you have any questions, please, feel free to send an email to marianaluizamr@gmail.com or reach out through the form below.
-                </p>
+    onChange = (e) => {
+        this.setState({ [e.target.name]: e.target.value })
+    }
 
-                <form className="contact__form" action="/contact.json">
-                    <Input className="contact__form--name" type="text" name="name" value={isValue} onChange={(e) => setIsValue(isValue = e.target.value)} hasValue={nameHasValue} />
-                    <Label for="name" className="contact__form--name-label"><LabelText>NAME</LabelText></Label>
+    handleSubmit = (event) => {
+        event.preventDefault();
+        let userName = JSON.stringify(this.state.name);
 
-                    <Input className="contact__form--email" type="email" name="email" value={isEmail} onChange={(e) => setIsEmail(isValue = e.target.value)} hasValue={emailHasValue} />
-                    <Label for="email" className="contact__form--email-label"><LabelText>EMAIL</LabelText></Label>
 
-                    <textarea className="contact__form--message" type="textarea" name="message" value={isMessage} onChange={(e) => setIsMessage(isValue = e.target.value)} hasValue={messageHasValue} />
-                    <input className="contact__form--send" type="submit" value="SEND" />
-                </form>
+        // fetch('/api/formData', {
+        //     method: 'POST',
+        //     body: userName,
+        // })
+        //     .then(console.log(userName))
+    }
+
+
+    render() {
+        return (
+            <section className="contact">
+                <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
+                <p className="general__code-caracters general__code-caracters--body">&#60;body&#62;</p>
+
+                <p className="general__code-caracters general__code-caracters--h1">&#60;h1&#62;</p>
+                <h1 className="contact__title">Contact me</h1>
+                <p className="general__code-caracters general__code-caracters--h1">&#60;/h1&#62;</p>
+
+                <div className="contact__wrapper">
+                    <section className="contact__content">
+                        <p className="contact_paragraph">
+                            If you have any questions, please, feel free to send an email to <u>marianaluizamr@gmail.com</u> or reach out through the form below.
+                        </p>
+
+                        <form onSubmit={this.handleSubmit} action="/api/formData" className="contact__form">
+                            <input className="contact__form--input" value={this.state.name} onChange={this.onChange} type="text" name="name" placeholder="NAME" />
+
+                            <input className="contact__form--input" value={this.state.email} onChange={this.onChange} type="email" name="email" placeholder="EMAIL" />
+
+                            <textarea className="contact__form--input contact__form--message" value={this.state.message} onChange={this.onChange} placeholder="YOUR MESSAGE" cols="80" type="textarea" name="message" />
+                            <input className="contact__form--input contact__form--send" type="submit" value="SEND" />
+                        </form>
+                    </section>
+
+                    <ContactImage className="contact__img" />
+                </div>
                 <p className="general__code-caracters general__code-caracters--body">&#60;/body&#62;</p>
+                <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
             </section>
-            <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
-        </section>
-    )
+        )
+    }
 }

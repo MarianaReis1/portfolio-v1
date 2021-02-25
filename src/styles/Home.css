@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
+#petalOne {
+  animation: movePetal 2s infinite alternate-reverse;
+}
+
+#heat {
+  -webkit-animation: heat 1s infinite;
+          animation: heat 1s infinite;
+}
+
+#armLeft {
+  -webkit-animation: moveArm 250ms linear infinite alternate;
+          animation: moveArm 250ms linear infinite alternate;
+}
+
+#armRight {
+  -webkit-animation: moveArm 250ms linear infinite alternate;
+          animation: moveArm 250ms linear infinite alternate;
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+@-webkit-keyframes movePetal {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+    -webkit-transform-origin: 10% 100%;
+            transform-origin: 10% 100%;
+  }
+}
+
+@keyframes movePetal {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+    -webkit-transform-origin: 10% 100%;
+            transform-origin: 10% 100%;
+  }
+}
+
+@-webkit-keyframes heat {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heat {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes moveArm {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+}
+
+@keyframes moveArm {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(4px);
+            transform: translateY(4px);
+  }
+}
+
+.home__content {
+  width: 100vw;
+  padding: 10px 20px;
+  height: inherit;
+}
+
+.home__img--tablet,
+.home__img--desktop {
+  display: none;
+}
+
+.home__title {
+  color: #fff;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.home__subtitle {
+  color: #fff;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-left: 20px;
+}
+
+.home__viewWork-button {
+  margin: 1.5rem auto;
+  display: block;
+  cursor: pointer;
+}
+
+@media all and (min-width: 360px) {
+  .home__content {
+    padding: 20px 30px;
+  }
+  .home__title {
+    font-size: 1.7rem;
+    padding: 0.9rem 0;
+  }
+  .home__subtitle {
+    font-size: 1.4rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+  .home__viewWork-button {
+    margin: 2.1rem auto;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .home__content {
+    padding: 20px 50px;
+  }
+  .home__img--tablet {
+    display: block;
+    margin: 2rem auto;
+    width: 65%;
+    height: auto;
+  }
+  .home__title {
+    font-size: 2.3rem;
+    padding: 10px 0;
+  }
+  .home__title > p > span {
+    font-size: 2.8rem;
+    padding: 0;
+  }
+  .home__subtitle {
+    font-size: 2rem;
+    margin-left: 60px;
+  }
+  .home__viewWork-button {
+    margin: 2.5rem auto;
+    font-size: 1.1rem;
+    width: 215px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .home {
+    width: 100vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 10px 90px;
+  }
+  .home__content {
+    width: 100%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: auto;
+    padding: 0;
+  }
+  .home__img--tablet {
+    display: none;
+  }
+  .home__img--desktop {
+    display: inline-block;
+    max-height: 600px;
+    height: 50%;
+    width: auto;
+    margin: auto;
+  }
+  .home__title {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .home__title span {
+    font-size: 2.3rem;
+  }
+  .home__subtitle {
+    font-size: 1.8rem;
+    margin-left: 60px;
+  }
+  .home__viewWork-button {
+    margin: 1.2rem;
+    font-size: 1.2rem;
+    height: 45px;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .home {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

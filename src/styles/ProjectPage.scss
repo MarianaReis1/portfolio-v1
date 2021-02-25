@@ -1,0 +1,152 @@
+@import "../styles/variables";
+
+.projectPage__content {
+  width: 100vw;
+  padding: 10px 20px;
+  height: inherit;
+}
+
+.projectPage__title {
+  @include title;
+}
+
+.projectPage__images {
+  &--gif {
+    width: 85%;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  &--icons {
+    cursor: pointer;
+    :hover {
+      fill: $primaryColor2;
+    }
+
+    display: flex;
+    justify-content: space-around;
+    margin: 0.6rem auto;
+    width: 150px;
+  }
+}
+
+.projectPage__descriptions {
+  width: 85%;
+  margin: auto;
+
+  &--paragraph {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.8;
+    margin: 1.2rem auto;
+  }
+
+  &--tools {
+    margin: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  &--list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  &--items {
+    margin: 0.3rem 0.6rem;
+  }
+}
+
+.projectPage__goBack {
+  margin: 1.5rem auto;
+  display: block;
+  cursor: pointer;
+}
+
+@media all and (min-width: $bp__small) {
+  .projectPage {
+    padding: 20px 30px;
+  }
+
+  .projectPage__title {
+    font-size: 1.7rem;
+    padding: 0.9rem 0;
+  }
+}
+
+@media all and (min-width: $bp__medium) {
+  .projectPage__content {
+    padding: 20px 50px;
+  }
+
+  .projectPage__title {
+    padding: 0.9rem 0;
+    font-size: 2.3rem;
+  }
+
+  .projectPage__images {
+    &--gif {
+      width: 65%;
+    }
+
+    &--icons {
+      width: 170px;
+    }
+  }
+
+  .projectPage__descriptions {
+    width: 85%;
+    margin: auto;
+
+    &--paragraph {
+      font-size: 1.1rem;
+    }
+
+    &--tools {
+      font-size: 1.5rem;
+    }
+
+    &--list {
+      font-size: 2.5rem;
+    }
+  }
+
+  .projectPage__goBack {
+    margin: 2rem auto;
+    font-size: 1.1rem;
+    width: 215px;
+  }
+}
+
+@media all and (min-width: $bp__large) {
+  .projectPage__wrapper {
+    display: flex;
+  }
+
+  .projectPage__images {
+    align-self: center;
+
+    &--gif {
+      width: 85%;
+    }
+  }
+
+  .projectPage__goBack {
+    margin: 1rem auto;
+  }
+}
+
+// @media all and (min-width: $bp__xlarge) {
+
+//   }
+
+@media all and (min-width: $bp__xxlarge) {
+  .projectPage__content {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}

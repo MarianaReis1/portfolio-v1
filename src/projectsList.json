@@ -1,0 +1,59 @@
+[
+    {
+        "title": "IP Tracker Web App",
+        "name": "ipTracker",
+        "path": "/projects/ipTracker",
+        "imgSrc": "/IpTrackerImg.png",
+        "imgAlt": "Ip Tracker Gif",
+        "link": "http://ip-tracker.marianareis.co/",
+        "githubLink": "https://github.com/MarianaReis1/IpTrackerReact",
+
+
+        "tools": "REACTJS | API | SASS",
+        "description": "IpTracker is a beatiful simple Webapp to help you track IP and URLs. The UI/UX was concieved with a mobile first approach, taking advantage of ReactJs’s tools to keep it simple and to make best and fastes use of the API.",
+        "techSheet": ["html5", "css3", "sass", "react", "javascript", "git", "github"]
+    },
+    {
+        "title": "PauseMe Web App",
+        "name": "pauseMe",
+        "path": "/projects/pauseMe",
+        "imgSrc": "/PausemeImg.png",
+        "imgAlt": "PauseMe Gif",
+        "link": "http://pauseme.marianareis.co/",
+        "githubLink": "https://github.com/MarianaReis1/pauseme-js",
+
+
+        "tools": "JAVASCRIPT | SASS | ILLUSTRATOR",
+        "description": "",
+        "techSheet": ["javascript", "html5", "css3", "sass", "illustrator", "git", "github"]
+
+    },
+    {
+        "title": "Insure Web Page",
+        "name": "insure",
+        "path": "/projects/insure",
+        "imgSrc": "/InsureImg.png",
+        "imgAlt": "insure Gif",
+        "link": "https://marianareis1.github.io/insure/",
+        "githubLink": "https://github.com/MarianaReis1/insure",
+
+
+        "tools": "JAVASCRIPT | SASS | BEM",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna voluptate velit esse cillum dolore eu fugiat nulla.",
+        "techSheet": ["html5", "css3", "sass", "javascript", "git", "github"]
+    },
+    {
+        "title": "Portfolio",
+        "name": "portfolio",
+        "path": "/projects/portfolio",
+        "imgSrc": "/PortfolioImg.png",
+        "imgAlt": "portfolio Gif",
+        "link": "https://portfolio-ten-snowy.vercel.app/",
+        "githubLink": "https://github.com/MarianaReis1/portfolio",
+
+
+        "tools": "REACTJS | FIGMA | SASS ",
+        "description": "This UI/UX was concieved with a mobile first approach. The idea behind this was to create a showcase of the projects that I have been working on in the past few months. The UI and the code behind it was kept simple, so the focus could go to the advantages that ReactJs can provide for simple applications.",
+        "techSheet": ["react", "javascript", "illustrator", "html5", "css3", "sass", "git", "github"]
+    }
+]

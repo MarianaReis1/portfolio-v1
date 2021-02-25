@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
+.projectPage__content {
+  width: 100vw;
+  padding: 10px 20px;
+  height: inherit;
+}
+
+.projectPage__title {
+  color: #fff;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.projectPage__images--gif {
+  width: 85%;
+  margin: 1rem auto;
+  display: block;
+}
+
+.projectPage__images--icons {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0.6rem auto;
+  width: 150px;
+}
+
+.projectPage__images--icons :hover {
+  fill: #49cbbf;
+}
+
+.projectPage__descriptions {
+  width: 85%;
+  margin: auto;
+}
+
+.projectPage__descriptions--paragraph {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.8;
+  margin: 1.2rem auto;
+}
+
+.projectPage__descriptions--tools {
+  margin: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.projectPage__descriptions--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.projectPage__descriptions--items {
+  margin: 0.3rem 0.6rem;
+}
+
+.projectPage__goBack {
+  margin: 1.5rem auto;
+  display: block;
+  cursor: pointer;
+}
+
+@media all and (min-width: 360px) {
+  .projectPage {
+    padding: 20px 30px;
+  }
+  .projectPage__title {
+    font-size: 1.7rem;
+    padding: 0.9rem 0;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .projectPage__content {
+    padding: 20px 50px;
+  }
+  .projectPage__title {
+    padding: 0.9rem 0;
+    font-size: 2.3rem;
+  }
+  .projectPage__images--gif {
+    width: 65%;
+  }
+  .projectPage__images--icons {
+    width: 170px;
+  }
+  .projectPage__descriptions {
+    width: 85%;
+    margin: auto;
+  }
+  .projectPage__descriptions--paragraph {
+    font-size: 1.1rem;
+  }
+  .projectPage__descriptions--tools {
+    font-size: 1.5rem;
+  }
+  .projectPage__descriptions--list {
+    font-size: 2.5rem;
+  }
+  .projectPage__goBack {
+    margin: 2rem auto;
+    font-size: 1.1rem;
+    width: 215px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .projectPage__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projectPage__images {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .projectPage__images--gif {
+    width: 85%;
+  }
+  .projectPage__goBack {
+    margin: 1rem auto;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .projectPage__content {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=ProjectPage.css.map */

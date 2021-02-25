@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import './Projects.css'
-import ProjectsCard from './ProjectsCard'
+import '../styles/Projects.css'
+import ProjectsCard from './smallerComponents/ProjectsCard'
 
 export const projectsList = [
     {
@@ -17,7 +17,7 @@ export const projectsList = [
 
         tools: "REACTJS | API | SASS",
         description: "IpTracker is a beatiful simple Webapp to help you track IP and URLs. The UI/UX was concieved with a mobile first approach, taking advantage of ReactJs’s tools to keep it simple and to make best and fastes use of the API.",
-        techSheet: ["HTML5", "CSS3", "SASS", "BEM", "REACTJS", "API", "RESPONSIVE DESIGN", "ES6", "GIT", "GITHUB", "VERCEL"]
+        techSheet: ["html5", "css3", "sass", "react", "javascript", "git", "github"]
     },
     {
         title: "PauseMe Web App",
@@ -37,11 +37,6 @@ export const projectsList = [
         having the option to turn off the breath guide, change the volume of the video, and so on.
         `,
 
-        //  
-        // so this project allowed me to practice and improve these new abilities regularly. 
-
-        // Currently, I am working on the second phase of this project: a ReactJS PauseMe, where we can have a scalable application. 
-        // The main focus will be to expand the possibilities, such as allowing the inclusion of new scenes from the user side, having the option to turn off the breath guide, change the volume of the video, and so on.`,
         techSheet: ["javascript", "html5", "css3", "sass", "illustrator", "git", "github"]
 
     },
@@ -57,7 +52,7 @@ export const projectsList = [
 
         tools: "JAVASCRIPT | SASS | BEM",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna voluptate velit esse cillum dolore eu fugiat nulla.",
-        techSheet: ["HTML5", "CSS3", "SASS", "BEM", "JAVASCRIPT", "RESPONSIVE DESIGN", "GIT", "GITHUB"]
+        techSheet: ["html5", "css3", "sass", "javascript", "git", "github"]
     },
     {
         title: "Portfolio",
@@ -71,7 +66,7 @@ export const projectsList = [
 
         tools: "REACTJS | FIGMA | SASS ",
         description: "This UI/UX was concieved with a mobile first approach. The idea behind this was to create a showcase of the projects that I have been working on in the past few months. The UI and the code behind it was kept simple, so the focus could go to the advantages that ReactJs can provide for simple applications.",
-        techSheet: ["REACTJS", "ES6", "FIGMA", "ILLUSTRATOR", "HTML5", "CSS3", "SASS", "BEM", "RESPONSIVE DESIGN", "GIT", "GITHUB", "VERCEL"]
+        techSheet: ["react", "javascript", "illustrator", "html5", "css3", "sass", "git", "github"]
     }
 ]
 

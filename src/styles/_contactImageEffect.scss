@@ -1,0 +1,131 @@
+#box1 {
+  position: relative;
+  animation: box-one 2s infinite;
+  animation-direction: alternate;
+}
+
+#box2 {
+  position: relative;
+  animation: box-two 2s infinite;
+  animation-direction: alternate;
+}
+
+#box3 {
+  position: relative;
+  animation: box-three 2s infinite;
+  animation-direction: alternate;
+}
+
+#dot1,
+#dot2,
+#dot3 {
+  position: relative;
+  animation: blink 1s infinite;
+}
+
+#dot2 {
+  animation-delay: 250ms;
+}
+
+#dot3 {
+  animation-delay: 500ms;
+}
+
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes dot3 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes box-one {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-two {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-three {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+//   @keyframes box-two {
+//     0% {
+//       bottom: -700px;
+//     }
+
+//     100% {
+//       bottom: 600px;
+//     }
+//   }
+
+//   @keyframes box-three {
+//     0% {
+//       bottom: -800px;
+//     }
+
+//     100% {
+//       bottom: 500px;
+//     }
+//   }

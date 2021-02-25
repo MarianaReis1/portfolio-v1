@@ -1,0 +1,57 @@
+#petalOne {
+  animation: movePetal 2s infinite alternate-reverse;
+}
+
+#heat {
+  animation: heat 1s infinite;
+}
+
+#armLeft {
+  animation: moveArm 250ms linear infinite alternate;
+}
+
+#armRight {
+  animation: moveArm 250ms linear infinite alternate;
+  animation-delay: 250ms;
+}
+
+@keyframes movePetal {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(45deg);
+    transform-origin: 10% 100%;
+  }
+}
+
+@keyframes heat {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveArm {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(4px);
+  }
+}

@@ -1,0 +1,92 @@
+@import '../shared/variables';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $primaryColor1;
+    font-family: $fontFamily1;
+    font-weight: 400;
+    font-size: 12px;
+    color: $secondaryColor1;
+}
+
+// All Link components that behave as "a" tag will not ahve underline
+a {
+    text-decoration: none;
+} 
+
+
+
+// Centralising Styles -  Tags on all pages 
+.general__code-caracters {
+    font-family: $fontFamily2;
+    color: $primaryColor2;
+    padding: 0.6rem 0;
+
+    &--body {
+        margin-left: 20px;
+        position: relative;
+        top: 0;
+    }
+
+    &--h1 {
+        margin-left: 40px;
+    }
+
+    &--h3 {
+        margin-left: 60px;
+    }
+
+    &--p {
+        margin-left: 40px;
+    }
+}
+
+@media all and (min-height: $breakpoint__mobile--height){
+    .general__code-caracters {    
+        
+        font-size: 1.1rem;
+        &--body {
+            margin-left: 20px;
+            position: relative;
+            top: 0;
+        }
+    
+        &--h1 {
+            margin-left: 40px;
+        }
+    
+        &--h3 {
+            margin-left: 60px;
+        }
+    
+        &--p {
+            margin-left: 40px;
+        }
+    }
+}
+
+@media all and (min-width: $breakpoint__tablet){
+    .general__code-caracters {
+        font-size: 1.3rem;
+        padding: 0.4rem 0;
+    }
+}
+
+@media all and (min-width: $breakpoint__desktop){
+    .general__code-caracters {
+        font-size: 1.1rem;
+        padding: 0.4rem 0;
+    }
+}
+
+@media all and (min-width: $breakpoint__desktop--big){
+    .general__code-caracters {
+        font-size: 1.3rem;
+        padding: 0.7rem 0;
+    }
+}

@@ -1,0 +1,140 @@
+@import "../styles/variables";
+
+.projects__content {
+  width: 100vw;
+  padding: 10px 20px;
+  height: inherit;
+}
+
+.projects__title {
+  @include title;
+}
+
+.projects__grid {
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-gap: 10px;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+}
+
+.projects__items {
+  background-color: $primaryColor2;
+  width: 240px;
+  height: 240px;
+  margin: auto;
+
+  &:hover {
+    transition: transform 0.2s linear;
+    transform: scale(1.1);
+  }
+
+  &--img {
+    display: block;
+    margin: auto;
+    padding-top: 5px;
+    width: 95%;
+    min-height: 130px;
+  }
+
+  &--title,
+  &--subtitle {
+    color: $secondaryColor3;
+    text-align: center;
+  }
+
+  &--title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
+  }
+
+  &--subtitle {
+    font-size: 0.8rem;
+    font-weight: 400;
+  }
+}
+
+.projects__icons {
+  cursor: pointer;
+  :hover {
+    fill: $secondaryColor3;
+  }
+  &--grid {
+    display: flex;
+    margin: 0.6rem auto;
+    width: 150px;
+    justify-content: space-between;
+  }
+}
+
+@media all and (min-width: $bp__small) {
+  .projects__content {
+    padding: 20px 30px;
+  }
+
+  .projects__title {
+    font-size: 1.7rem;
+    padding: 0.9rem 0;
+  }
+}
+
+@media all and (min-width: $bp__medium) {
+  .projects__content {
+    padding: 20px 50px;
+  }
+
+  .projects__title {
+    font-size: 2.3rem;
+    padding: 0.9rem 0;
+  }
+
+  .projects__grid {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    margin: 1rem auto;
+  }
+
+  .projects__items {
+    width: 280px;
+    height: 280px;
+
+    &--img {
+      height: 147px;
+    }
+  }
+
+  .projects__icons {
+    &--grid {
+      margin: 1rem auto;
+    }
+  }
+}
+
+@media all and (min-width: $bp__large) {
+  .projects__content {
+    width: 100vw;
+    height: 100%;
+    padding: 0 90px;
+  }
+
+  .projects__grid {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    justify-content: space-between;
+    margin: 1rem -20px;
+  }
+}
+
+@media all and (min-width: $bp__xlarge) {
+  .projects__title {
+    @include title;
+  }
+}
+
+@media all and (min-width: $bp__xxlarge) {
+  .projects__content {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}

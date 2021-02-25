@@ -1,0 +1,257 @@
+#plant {
+  position: relative;
+  animation: plant 7s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+#tennis {
+  position: relative;
+  animation: tennis 6.5s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+#map {
+  position: relative;
+  animation: map 6s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+#book {
+  position: relative;
+  animation: book 5.5s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+#code {
+  position: relative;
+  animation: code 4.5s ease-in-out infinite;
+  animation-direction: alternate;
+}
+
+@keyframes plant {
+  0% {
+    opacity: 0;
+    left: 250px;
+    top: 100px;
+  }
+
+  50% {
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+  }
+
+  100% {
+    opacity: 0;
+    left: 250px;
+    top: 100px;
+  }
+}
+
+@keyframes tennis {
+  0% {
+    opacity: 0;
+    left: 300px;
+    top: -200px;
+  }
+
+  50% {
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+  }
+
+  100% {
+    opacity: 0;
+    left: 300px;
+    top: -200px;
+  }
+}
+
+@keyframes map {
+  0% {
+    opacity: 0;
+    left: -220px;
+    top: 300px;
+  }
+
+  50% {
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+  }
+
+  100% {
+    opacity: 0;
+    left: -220px;
+    top: 300px;
+  }
+}
+
+@keyframes book {
+  0% {
+    opacity: 0;
+    left: -250px;
+    top: -65px;
+  }
+
+  50% {
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+  }
+
+  100% {
+    opacity: 0;
+    left: -250px;
+    top: -65px;
+  }
+}
+
+@keyframes code {
+  0% {
+    opacity: 0;
+    left: 130px;
+    top: 300px;
+  }
+
+  50% {
+    opacity: 1;
+    left: 0px;
+    top: 0px;
+  }
+
+  100% {
+    opacity: 0;
+    left: 130px;
+    top: 300px;
+  }
+}
+
+//---------------------------------
+
+// #plant {
+//     position: relative;
+//     animation: plant 9s ease-in-out infinite;
+//     //   animation-delay: 4s;
+//     animation-direction: alternate;
+//   }
+
+//   #tennis {
+//     position: relative;
+//     animation: tennis 6.5s ease-in-out infinite;
+//     animation-direction: alternate;
+//   }
+
+//   #map {
+//     position: relative;
+//     animation: map 6s ease-in-out infinite;
+//   //   animation-delay: 3s;
+//     animation-direction: alternate;
+//   }
+
+//   #book {
+//     position: relative;
+//     animation: book 5s ease-in-out infinite;
+//     animation-direction: alternate;
+//   }
+
+//   #code {
+//     position: relative;
+//     animation: code 5s ease-in-out infinite;
+//   //   animation-delay: 2s;
+//     animation-direction: alternate;
+//   }
+
+//   @keyframes plant {
+//     0% {
+//       opacity: 0;
+//       left: 250px;
+//       top: 100px;
+//     }
+
+//     50% {
+//       opacity: 1;
+//       left: 0px;
+//       top: 0px;
+//     }
+
+//     100% {
+//       opacity: 0;
+//       left: 250px;
+//       top: 100px;
+//     }
+//   }
+
+//   @keyframes tennis {
+//     0% {
+//       left: 0px;
+//       top: 0px;
+//     }
+
+//     50% {
+//       opacity: 0;
+//       left: 300px;
+//       top: -200px;
+//     }
+
+//     100% {
+//       left: 0px;
+//       top: 0px;
+//     }
+//   }
+
+//   @keyframes map {
+//     0% {
+//       left: 0px;
+//       top: 0px;
+//     }
+
+//     50% {
+//       opacity: 0;
+//       left: -220px;
+//       top: 300px;
+//     }
+
+//     100% {
+//       left: 0px;
+//       top: 0px;
+//     }
+//   }
+
+//   @keyframes book {
+//     0% {
+//       left: 0px;
+//       top: 0px;
+//     }
+
+//     50% {
+//       opacity: 0;
+//       left: -250px;
+//       top: -65px;
+//     }
+
+//     100% {
+//       left: 0px;
+//       top: 0px;
+//     }
+//   }
+
+//   @keyframes code {
+//     0% {
+//       left: 0px;
+//       top: 0px;
+//     }
+//     25% {
+//       opacity: 0.2;
+//     }
+//     50% {
+//       opacity: 0;
+//       left: 450px;
+//       top: 850px;
+//     }
+//     100% {
+//       left: 0px;
+//       top: 0px;
+//     }
+//   }

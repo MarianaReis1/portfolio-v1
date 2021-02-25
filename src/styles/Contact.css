@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins&family=Ruluko&display=swap");
+#box1 {
+  position: relative;
+  -webkit-animation: box-one 2s infinite;
+          animation: box-one 2s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+#box2 {
+  position: relative;
+  -webkit-animation: box-two 2s infinite;
+          animation: box-two 2s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+#box3 {
+  position: relative;
+  -webkit-animation: box-three 2s infinite;
+          animation: box-three 2s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+#dot1,
+#dot2,
+#dot3 {
+  position: relative;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+#dot2 {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+
+#dot3 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+@-webkit-keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+
+@keyframes blink {
+  50% {
+    color: transparent;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes dot3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes dot3 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes box-one {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-one {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes box-two {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-two {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes box-three {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes box-three {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contact {
+  padding: 10px 20px;
+}
+
+.contact__title {
+  color: #fff;
+  margin-left: 50px;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.contact_paragraph {
+  font-size: 0.9rem;
+  text-align: justify;
+  line-height: 1.8;
+  margin: 1rem 20px;
+}
+
+.contact__form {
+  margin: 0.7rem 20px;
+}
+
+.contact__form--input {
+  background-color: transparent;
+  border-radius: 70px;
+  border: 3px solid #49cbbf;
+  color: #fff;
+  height: 40px;
+  padding: 0.4rem 0.8rem;
+  width: 100%;
+  margin: 0.3rem 0;
+}
+
+.contact__form--input[type="text"]::-webkit-input-placeholder, .contact__form--input[type="email"]::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  opacity: 1;
+}
+
+.contact__form--input[type="text"]:-ms-input-placeholder, .contact__form--input[type="email"]:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  opacity: 1;
+}
+
+.contact__form--input[type="text"]::-ms-input-placeholder, .contact__form--input[type="email"]::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  opacity: 1;
+}
+
+.contact__form--input[type="text"]::placeholder, .contact__form--input[type="email"]::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  opacity: 1;
+}
+
+.contact__form--message {
+  border-radius: 25px;
+  height: 120px;
+}
+
+.contact__form--message[type="textarea"]::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  opacity: 1;
+}
+
+.contact__form--message[type="textarea"]:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  opacity: 1;
+}
+
+.contact__form--message[type="textarea"]::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  opacity: 1;
+}
+
+.contact__form--message[type="textarea"]::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  opacity: 1;
+}
+
+.contact__form--send {
+  width: 35%;
+  float: right;
+  font-size: 1rem;
+}
+
+.contact__form--send:hover {
+  background: #49cbbf;
+  cursor: pointer;
+}
+
+.contact__img {
+  display: none;
+}
+
+.contact__button {
+  position: relative;
+  float: right;
+  margin: 0.3rem 0;
+}
+
+@media all and (min-width: 360px) {
+  .contact {
+    padding: 20px 30px;
+  }
+  .contact__title {
+    font-size: 1.7rem;
+    padding: 0.9rem 0;
+  }
+  .contact_paragraph {
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: 768px) {
+  .contact {
+    padding: 20px 50px;
+  }
+  .contact__title {
+    font-size: 2.3rem;
+    padding: 0.9rem 0;
+  }
+  .contact_paragraph {
+    font-size: 1.3rem;
+    margin: 1rem 50px;
+  }
+  .contact__form {
+    margin: 1.5rem 5rem;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .contact {
+    width: 100%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: auto;
+    padding: 10px 90px;
+  }
+  .contact__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contact__content {
+    width: 100%;
+  }
+  .contact__img {
+    display: inline-block;
+    width: 75%;
+    max-width: 515px;
+    height: auto;
+    margin: auto;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .contact {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */
