@@ -42,7 +42,7 @@ a {
   margin-left: 40px;
 }
 
-@media all and (min-height: 569px) {
+@media all and (min-width: 360px) {
   .general__code-caracters {
     font-size: 1.1rem;
   }
@@ -69,14 +69,14 @@ a {
   }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1024px) {
   .general__code-caracters {
     font-size: 1.1rem;
     padding: 0.4rem 0;
   }
 }
 
-@media all and (min-width: 1440px) {
+@media all and (min-width: 1366px) {
   .general__code-caracters {
     font-size: 1.3rem;
     padding: 0.7rem 0;

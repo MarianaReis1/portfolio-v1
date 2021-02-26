@@ -14,9 +14,9 @@ function App() {
     <BrowserRouter>
       <Header />
 
-      <Route exact="true" path="/" component={Home} />
+      <Route exact={true} path="/" component={Home} />
       <Route path="/about" component={About} />
-      <Route exact="true" path="/projects" component={Projects} />
+      <Route exact={true} path="/projects" component={Projects} />
       <Route path="/contact" component={Contact} />
       {
         projectsList.map((eachProj) =>

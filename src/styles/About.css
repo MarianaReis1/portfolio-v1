@@ -40,38 +40,28 @@
 }
 
 @-webkit-keyframes plant {
-  0% {
+  from {
     opacity: 0;
     left: 250px;
     top: 100px;
   }
-  50% {
+  to {
     opacity: 1;
     left: 0px;
     top: 0px;
-  }
-  100% {
-    opacity: 0;
-    left: 250px;
-    top: 100px;
   }
 }
 
 @keyframes plant {
-  0% {
+  from {
     opacity: 0;
     left: 250px;
     top: 100px;
   }
-  50% {
+  to {
     opacity: 1;
     left: 0px;
     top: 0px;
-  }
-  100% {
-    opacity: 0;
-    left: 250px;
-    top: 100px;
   }
 }
 
