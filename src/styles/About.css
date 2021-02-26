@@ -40,172 +40,182 @@
 }
 
 @-webkit-keyframes plant {
-  from {
+  0% {
     opacity: 0;
-    left: 250px;
-    top: 100px;
+    -webkit-transform: translate(250px, 100px);
+            transform: translate(250px, 100px);
   }
-  to {
+  50% {
     opacity: 1;
-    left: 0px;
-    top: 0px;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(250px, 100px);
+            transform: translate(250px, 100px);
   }
 }
 
 @keyframes plant {
-  from {
+  0% {
     opacity: 0;
-    left: 250px;
-    top: 100px;
+    -webkit-transform: translate(250px, 100px);
+            transform: translate(250px, 100px);
   }
-  to {
+  50% {
     opacity: 1;
-    left: 0px;
-    top: 0px;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(250px, 100px);
+            transform: translate(250px, 100px);
   }
 }
 
 @-webkit-keyframes tennis {
   0% {
     opacity: 0;
-    left: 300px;
-    top: -200px;
+    -webkit-transform: translate(300px, -200px);
+            transform: translate(300px, -200px);
   }
   50% {
     opacity: 1;
-    left: 0px;
-    top: 0px;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
   100% {
     opacity: 0;
-    left: 300px;
-    top: -200px;
+    -webkit-transform: translate(300px, -200px);
+            transform: translate(300px, -200px);
   }
 }
 
 @keyframes tennis {
   0% {
     opacity: 0;
-    left: 300px;
-    top: -200px;
+    -webkit-transform: translate(300px, -200px);
+            transform: translate(300px, -200px);
   }
   50% {
     opacity: 1;
-    left: 0px;
-    top: 0px;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
   100% {
     opacity: 0;
-    left: 300px;
-    top: -200px;
+    -webkit-transform: translate(300px, -200px);
+            transform: translate(300px, -200px);
   }
 }
 
 @-webkit-keyframes map {
   0% {
     opacity: 0;
-    left: -220px;
-    top: 300px;
+    -webkit-transform: translate(-220px, 300px);
+            transform: translate(-220px, 300px);
   }
   50% {
     opacity: 1;
-    left: 0px;
-    top: 0px;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
   100% {
     opacity: 0;
-    left: -220px;
-    top: 300px;
+    -webkit-transform: translate(-220px, 300px);
+            transform: translate(-220px, 300px);
   }
 }
 
 @keyframes map {
   0% {
     opacity: 0;
-    left: -220px;
-    top: 300px;
+    -webkit-transform: translate(-220px, 300px);
+            transform: translate(-220px, 300px);
   }
   50% {
     opacity: 1;
-    left: 0px;
-    top: 0px;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
   100% {
     opacity: 0;
-    left: -220px;
-    top: 300px;
+    -webkit-transform: translate(-220px, 300px);
+            transform: translate(-220px, 300px);
   }
 }
 
 @-webkit-keyframes book {
   0% {
     opacity: 0;
-    left: -250px;
-    top: -65px;
+    -webkit-transform: translate(-250px, -65px);
+            transform: translate(-250px, -65px);
   }
   50% {
     opacity: 1;
-    left: 0px;
-    top: 0px;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
   100% {
     opacity: 0;
-    left: -250px;
-    top: -65px;
+    -webkit-transform: translate(-250px, -65px);
+            transform: translate(-250px, -65px);
   }
 }
 
 @keyframes book {
   0% {
     opacity: 0;
-    left: -250px;
-    top: -65px;
+    -webkit-transform: translate(-250px, -65px);
+            transform: translate(-250px, -65px);
   }
   50% {
     opacity: 1;
-    left: 0px;
-    top: 0px;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
   100% {
     opacity: 0;
-    left: -250px;
-    top: -65px;
+    -webkit-transform: translate(-250px, -65px);
+            transform: translate(-250px, -65px);
   }
 }
 
 @-webkit-keyframes code {
   0% {
     opacity: 0;
-    left: 130px;
-    top: 300px;
+    -webkit-transform: translate(130px, 300px);
+            transform: translate(130px, 300px);
   }
   50% {
     opacity: 1;
-    left: 0px;
-    top: 0px;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
   100% {
     opacity: 0;
-    left: 130px;
-    top: 300px;
+    -webkit-transform: translate(130px, 300px);
+            transform: translate(130px, 300px);
   }
 }
 
 @keyframes code {
   0% {
     opacity: 0;
-    left: 130px;
-    top: 300px;
+    -webkit-transform: translate(130px, 300px);
+            transform: translate(130px, 300px);
   }
   50% {
     opacity: 1;
-    left: 0px;
-    top: 0px;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
   }
   100% {
     opacity: 0;
-    left: 130px;
-    top: 300px;
+    -webkit-transform: translate(130px, 300px);
+            transform: translate(130px, 300px);
   }
 }
 

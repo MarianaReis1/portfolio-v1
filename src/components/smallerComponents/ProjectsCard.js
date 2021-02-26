@@ -13,7 +13,6 @@ export default function ProjectsCard(props) {
     useEffect((hasImage) => {
         if (hasImage !== '') {
             setHasImage(props.data.imgSrc)
-            console.log(props.data.imgSrc)
         }
     }, [props.data.imgSrc])
 

@@ -1,37 +1,33 @@
 import React, { Component } from 'react'
+import emailjs from 'emailjs-com';
 
 import '../styles/Contact.css'
 import ContactImage from './smallerComponents/ContactImage'
 
 
 export default class Contact extends Component {
-
-    constructor() {
-        super()
-
-        this.state = {
+    state = {
             name: '',
             email: '',
             message: ''
         }
-    }
 
     onChange = (e) => {
         this.setState({ [e.target.name]: e.target.value })
     }
 
-    handleSubmit = (event) => {
-        event.preventDefault();
-        let userName = JSON.stringify(this.state.name);
+    onSubmit = (e) => {
+        e.preventDefault();
 
-
-        // fetch('/api/formData', {
-        //     method: 'POST',
-        //     body: userName,
-        // })
-        //     .then(console.log(userName))
+        emailjs.sendForm('service_huq07lr', 'template_ovvbs2q', e.target, 'user_Klq09IO9kfkda4XACaeEU')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+        
+        e.target.reset()
     }
-
 
     render() {
         return (
@@ -49,7 +45,7 @@ export default class Contact extends Component {
                             If you have any questions, please, feel free to send an email to <u>marianaluizamr@gmail.com</u> or reach out through the form below.
                         </p>
 
-                        <form onSubmit={this.handleSubmit} action="/api/formData" className="contact__form">
+                        <form method="POST" action="/form" onSubmit={this.onSubmit} className="contact__form">
                             <input className="contact__form--input" value={this.state.name} onChange={this.onChange} type="text" name="name" placeholder="NAME" />
 
                             <input className="contact__form--input" value={this.state.email} onChange={this.onChange} type="email" name="email" placeholder="EMAIL" />
