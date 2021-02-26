@@ -78,19 +78,19 @@ body {
 
 @media all and (min-width: 768px) {
   .header {
-    min-height: 80px;
+    height: 80px;
   }
   .header__logo {
-    height: 45px;
+    height: 40px;
     margin-left: 50px;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .header__list--desktop {
     display: block;
     position: relative;
     width: unset;
     float: right;
-    margin-top: 25px;
+    margin-top: 27px;
     margin-right: 50px;
     background-color: #060642;
   }
@@ -99,8 +99,12 @@ body {
   }
   .header__item {
     padding: 0 25px;
-    vertical-align: middle;
     font-size: 1.2rem;
+    vertical-align: middle;
+  }
+  .header__item svg {
+    width: 25px;
+    height: auto;
   }
   .header__item--email {
     position: relative;
@@ -117,8 +121,8 @@ body {
     cursor: pointer;
     position: absolute;
     z-index: 1;
-    top: 135%;
-    left: -106%;
+    top: 110%;
+    left: -115%;
   }
   :hover > .header__item--email-tooltip {
     visibility: visible;
@@ -144,42 +148,44 @@ body {
 }
 
 @media all and (min-width: 1024px) {
+  .header {
+    height: 70px;
+  }
   .header__logo {
-    height: 45px;
     margin-left: 90px;
     margin-top: 15px;
   }
   .header__list--desktop {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-right: 70px;
   }
   .header__item {
     padding: 0 40px;
     font-size: 2rem;
   }
-  .header__item svg {
-    width: 30px;
-    height: auto;
-  }
   .header__item--email-tooltip {
-    top: 105%;
-    left: -64%;
+    top: 100%;
+    left: -69%;
   }
 }
 
 @media all and (min-width: 1366px) {
   .header {
-    min-height: 120px;
+    height: 80px;
   }
   .header__logo {
-    height: 60px;
+    height: 50px;
+  }
+  .header__list--desktop {
+    margin-top: 8px;
   }
   .header__item {
     padding: 0 45px;
     font-size: 2.7rem;
   }
   .header__item--email-tooltip {
-    left: -50%;
+    top: 93%;
+    left: -59%;
   }
 }
 
@@ -187,6 +193,10 @@ body {
   .header {
     max-width: 1920px;
     margin: 0 auto;
+  }
+  .header__item--email-tooltip {
+    left: -59%;
+    top: 90%;
   }
 }
 /*# sourceMappingURL=Header.css.map */
