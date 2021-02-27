@@ -36,9 +36,9 @@ export default class Contact extends Component {
         )
         .then(
             this.setState({ 
-                name: ' ',
-                email: ' ',
-                message: ' '
+                name: '',
+                email: '',
+                message: ''
             })
         )
         

@@ -13,10 +13,8 @@ export const projectsList = [
         imgAlt: "Ip Tracker Gif",
         link: "http://ip-tracker.marianareis.co/",
         githubLink: "https://github.com/MarianaReis1/IpTrackerReact",
-
-
         tools: "REACTJS | API | SASS",
-        description: "IpTracker is a beatiful simple Webapp to help you track IP and URLs. The UI/UX was concieved with a mobile first approach, taking advantage of ReactJs’s tools to keep it simple and to make best and fastes use of the API.",
+        description: "IpTracker is a user-friendly WebApp that helps you track IPs and URLs. The UI/UX was conceived with a mobile-first approach, taking advantage of ReactJs’s tools to keep it simple and make the best and fastest use of the API.",
         techSheet: ["html5", "css3", "sass", "react", "javascript", "git", "github"]
     },
     {
@@ -27,16 +25,8 @@ export const projectsList = [
         imgAlt: "PauseMe Gif",
         link: "http://pauseme.marianareis.co/",
         githubLink: "https://github.com/MarianaReis1/pauseme-js",
-
-
         tools: "JAVASCRIPT | SASS | ILLUSTRATOR",
-        description: `PauseMe is a breath guide web application.
-        The idea to build this web app came when I was starting to learn JavaScript, along with RESPONSIVE DESIGN and DESIGN SYSTEM. 
-        Currently, I am working on the second phase of this project: a ReactJS PauseMe, where we can have a scalable and improved application.
-        The main focus will be to expand the possibilities, such as allowing the inclusion of new scenes from the user side, 
-        having the option to turn off the breath guide, change the volume of the video, and so on.
-        `,
-
+        description: "PauseMe is a breath guide Web Application that I built when I started to learn Responsive Design and Design Systems. So this project allowed me to implement the knowledge about user-friendly designs and, also, continue revisiting most of the EcmaScript6+ features. The next move on this project is to expand the possibilities and create a ReactJS PauseMe, where it can be a scalable and upgraded application.",
         techSheet: ["javascript", "html5", "css3", "sass", "illustrator", "git", "github"]
 
     },
@@ -48,10 +38,8 @@ export const projectsList = [
         imgAlt: "insure Gif",
         link: "https://marianareis1.github.io/insure/",
         githubLink: "https://github.com/MarianaReis1/insure",
-
-
         tools: "JAVASCRIPT | SASS | BEM",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna voluptate velit esse cillum dolore eu fugiat nulla.",
+        description: "",
         techSheet: ["html5", "css3", "sass", "javascript", "git", "github"]
     },
     {
@@ -65,7 +53,7 @@ export const projectsList = [
 
 
         tools: "REACTJS | FIGMA | SASS ",
-        description: "This UI/UX was concieved with a mobile first approach. The idea behind this was to create a showcase of the projects that I have been working on in the past few months. The UI and the code behind it was kept simple, so the focus could go to the advantages that ReactJs can provide for simple applications.",
+        description: "This application was created using ReactJS + React Hooks,  alongside Figma + Illustrator, to build the design, a combination of SASS + BEM, to manage the styles and animations. The design aimed to make the content easily accessible and focus on being responsive and user-friendly. ",
         techSheet: ["react", "javascript", "illustrator", "html5", "css3", "sass", "git", "github"]
     }
 ]
@@ -83,10 +71,10 @@ export default function Projects() {
             <section className="projects__grid">
                 {
                     projectsList.map((proj) => (
-                        <Link to={`/projects/${proj.name}`}><ProjectsCard
+                        <ProjectsCard
                             data={proj}
                             key={proj.name}
-                        /></Link>
+                        />
                     ))
                 }
             </section>

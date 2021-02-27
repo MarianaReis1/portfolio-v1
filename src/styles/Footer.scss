@@ -1,0 +1,10 @@
+@import "../styles/variables";
+
+.footer {
+  width: 100vw;
+  background-color: $secondaryColor4;
+  height: 15px;
+  font-size: 0.6rem;
+  text-align: center;
+  padding: 1rem auto;
+}
