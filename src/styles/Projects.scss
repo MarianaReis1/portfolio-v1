@@ -3,7 +3,7 @@
 .projects__content {
   width: 100vw;
   padding: 10px 20px;
-  height: inherit;
+  min-height: calc(100vh - 90px);
 }
 
 .projects__title {

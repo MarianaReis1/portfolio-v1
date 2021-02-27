@@ -1,10 +1,13 @@
 @import "../styles/variables";
 @import "../styles/homeImageEffect";
 
+.home {
+  min-height: calc(100vh - 85px);
+}
+
 .home__content {
   width: 100vw;
   padding: 10px 20px;
-  height: inherit;
 }
 
 .home__img--tablet,
@@ -137,5 +140,9 @@
   .home {
     max-width: 1920px;
     margin: 0 auto;
+  }
+
+  .home__img--desktop {
+    height: 35%;
   }
 }

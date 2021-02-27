@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+.about {
+  min-height: calc(100vh - 90px);
+}
+
 .about__img {
   display: none;
 }
