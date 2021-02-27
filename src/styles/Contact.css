@@ -264,6 +264,13 @@
   cursor: pointer;
 }
 
+.contact__form--confirmation {
+  display: none;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  text-align: center;
+}
+
 .contact__img {
   display: none;
 }

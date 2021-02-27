@@ -18,13 +18,29 @@ export default class Contact extends Component {
 
     onSubmit = (e) => {
         e.preventDefault();
+        const confirmationMessage = document.querySelector('.contact__form--confirmation')
 
         emailjs.sendForm('service_huq07lr', 'template_ovvbs2q', e.target, 'user_Klq09IO9kfkda4XACaeEU')
         .then((result) => {
-            console.log(result.text);
+            console.log(result.text)
         }, (error) => {
-            console.log(error.text);
-        });
+            console.log(error.text)
+        })
+        .then(
+            confirmationMessage.style.display = "block"    
+        )
+        .then(
+            setTimeout(() => {
+                confirmationMessage.style.display = "none"
+            }, 6000)
+        )
+        .then(
+            this.setState({ 
+                name: ' ',
+                email: ' ',
+                message: ' '
+            })
+        )
         
         e.target.reset()
     }
@@ -46,12 +62,13 @@ export default class Contact extends Component {
                         </p>
 
                         <form method="POST" action="/form" onSubmit={this.onSubmit} className="contact__form">
-                            <input className="contact__form--input" value={this.state.name} onChange={this.onChange} type="text" name="name" placeholder="NAME" />
+                            <input className="contact__form--input" value={this.state.name} required onChange={this.onChange} type="text" name="name" placeholder="NAME" />
 
-                            <input className="contact__form--input" value={this.state.email} onChange={this.onChange} type="email" name="email" placeholder="EMAIL" />
+                            <input className="contact__form--input" value={this.state.email} required onChange={this.onChange} type="email" name="email" placeholder="EMAIL" />
 
-                            <textarea className="contact__form--input contact__form--message" value={this.state.message} onChange={this.onChange} placeholder="YOUR MESSAGE" cols="80" type="textarea" name="message" />
+                            <textarea className="contact__form--input contact__form--message" required value={this.state.message} onChange={this.onChange} placeholder="YOUR MESSAGE" cols="80" type="textarea" name="message" />
                             <input className="contact__form--input contact__form--send" type="submit" value="SEND" />
+                            <div className="contact__form--confirmation" >Message Sent!<br/>Thanks</div>
                         </form>
                     </section>
 
