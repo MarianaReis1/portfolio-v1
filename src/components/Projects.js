@@ -47,7 +47,7 @@ export const projectsList = [
         path: "/projects/portfolio",
         imgSrc: "/PortfolioImg.png",
         imgAlt: "portfolio Gif",
-        link: "https://portfolio-ten-snowy.vercel.app/",
+        link: "https://marianareis.co/",
         githubLink: "https://github.com/MarianaReis1/portfolio",
 
 
