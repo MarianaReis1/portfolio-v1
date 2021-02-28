@@ -3,7 +3,7 @@
 .projectPage__content {
   width: 100vw;
   padding: 10px 20px;
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 100px);
 }
 
 .projectPage__title {
@@ -15,6 +15,7 @@
     width: 85%;
     margin: 1rem auto;
     display: block;
+    box-shadow: 4px 5px rgba(0, 0, 0, 0.309);
   }
 
   &--icons {
@@ -53,7 +54,7 @@
     flex-wrap: wrap;
     list-style-type: none;
     font-size: 1.8rem;
-    cursor: pointer;
+    cursor: auto;
   }
 
   &--items {
