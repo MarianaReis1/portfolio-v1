@@ -2,7 +2,7 @@
 .projects__content {
   width: 100vw;
   padding: 10px 20px;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 110px);
 }
 
 .projects__title {
@@ -15,12 +15,6 @@
 .projects__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr, 1fr;
-      grid-template-columns: 1fr, 1fr;
-  grid-gap: 10px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   margin: 2rem auto;
 }
 
@@ -103,11 +97,11 @@
     padding: 0.9rem 0;
   }
   .projects__grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-grid-columns: (minmax(265px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    grid-gap: 1.5rem;
     margin: 1rem auto;
   }
   .projects__items {
@@ -129,11 +123,6 @@
     padding: 0 90px;
   }
   .projects__grid {
-    -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     margin: 1rem -20px;
   }
 }

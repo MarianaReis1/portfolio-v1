@@ -3,7 +3,7 @@
 .projectPage__content {
   width: 100vw;
   padding: 10px 20px;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 110px);
 }
 
 .projectPage__title {
@@ -133,6 +133,12 @@
 
     &--gif {
       width: 85%;
+    }
+  }
+
+  .projectPage__descriptions {
+    &--paragraph {
+      text-align: center;
     }
   }
 

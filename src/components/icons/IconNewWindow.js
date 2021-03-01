@@ -3,7 +3,7 @@ import React from 'react'
 export default function IconNewWindow (){
     return (
         <svg 
-            fill="#FFFFFF"
+            fill="#F0F0F0"
             version="1.1" 
             id="Layer_1" 
             x="0px" 

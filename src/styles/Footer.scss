@@ -9,3 +9,10 @@
   margin: auto;
   padding: 2rem auto;
 }
+
+@media all and (min-width: $bp__xxlarge) {
+  .footer {
+    height: 20px;
+    font-size: 1rem;
+  }
+}

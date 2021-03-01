@@ -13,7 +13,11 @@ export const projectsList = [
         link: "http://ip-tracker.marianareis.co/",
         githubLink: "https://github.com/MarianaReis1/IpTrackerReact",
         tools: "REACTJS | API | SASS",
-        description: "IpTracker is a user-friendly WebApp that helps you track IPs and URLs. The UI/UX was conceived with a mobile-first approach, taking advantage of ReactJs’s tools to keep it simple and make the best and fastest use of the API.",
+        description: [
+            "IpTracker is a user-friendly web application that helps you track IPs and URLs. This project was part of a challenge from Frontend Mentor.", 
+            <br></br>,
+            "I used Google API to get the IP Address locations and Google Maps JavaScript to generate the map. The UI was conceived with a mobile-first approach, taking advantage of ReactJs' tools to keep all styles and components simple and make the fastest use of the API."
+        ],
         techSheet: ["html5", "css3", "sass", "react", "javascript", "git", "github"]
     },
     {
@@ -25,7 +29,12 @@ export const projectsList = [
         link: "http://pauseme.marianareis.co/",
         githubLink: "https://github.com/MarianaReis1/pauseme-js",
         tools: "JAVASCRIPT | SASS | ILLUSTRATOR",
-        description: "PauseMe is a breath guide Web Application that I built when I started to learn Responsive Design and Design Systems. So this project allowed me to implement the knowledge about user-friendly designs and, also, continue revisiting most of the EcmaScript6+ features. The next move on this project is to expand the possibilities and create a ReactJS PauseMe, where it can be a scalable and upgraded application.",
+        description: [
+            "PauseMe is a breath guide Web Application that I built when I started to learn Design Systems and Responsive. ",
+            "This project allowed me to implement the knowledge about user-friendly designs and, also, continue revisiting most of the EcmaScript6+ features.", 
+            <br></br>,
+            "The next move on this project is to expand the possibilities and create a ReactJS PauseMe, where it can be a scalable and upgraded application."
+        ],
         techSheet: ["javascript", "html5", "css3", "sass", "illustrator", "git", "github"]
 
     },
@@ -38,7 +47,7 @@ export const projectsList = [
         link: "https://marianareis1.github.io/insure/",
         githubLink: "https://github.com/MarianaReis1/insure",
         tools: "JAVASCRIPT | SASS | BEM",
-        description: "",
+        description: ["This landing page was part of a challenge from Frontend Mentor, where I should build it according to the design system given, respecting the responsiveness required. To complete this challenge, I used HTML5 and CSS3 alongside SASS and VanillaJS to optimize the site's layout depending on their device's screen size and implemented BEM Methodology to write cleaner and more readable classes."],
         techSheet: ["html5", "css3", "sass", "javascript", "git", "github"]
     },
     {
@@ -52,7 +61,7 @@ export const projectsList = [
 
 
         tools: "REACTJS | FIGMA | SASS ",
-        description: "This application was created using ReactJS + React Hooks,  alongside Figma + Illustrator, to build the design, a combination of SASS + BEM, to manage the styles and animations. The design aimed to make the content easily accessible and focus on being responsive and user-friendly. ",
+        description: ["This application was created using ReactJS + React Hooks. To build the design and the images, I used Figma + Illustrator. A combination of Pre-processor SASS + BEM Methodology helped me to manage the styles and animations. The application aimed to be responsive to all screen sizes, user-friendly and make the content easily accessible."],
         techSheet: ["react", "javascript", "illustrator", "html5", "css3", "sass", "git", "github"]
     }
 ]

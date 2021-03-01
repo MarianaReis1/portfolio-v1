@@ -4,7 +4,7 @@ export default function IconWorks (){
     return (
         <svg 
             className="icon-email"
-            fill="#FFFFFF"
+            fill="#F0F0F0"
             version="1.1" 
             x="0px" 
             y="0px"

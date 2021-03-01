@@ -8,4 +8,11 @@
   margin: auto;
   padding: 2rem auto;
 }
+
+@media all and (min-width: 1920px) {
+  .footer {
+    height: 20px;
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=Footer.css.map */

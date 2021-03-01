@@ -169,7 +169,7 @@
 
 .contact {
   padding: 10px 20px;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 110px);
 }
 
 .contact__title {
@@ -203,25 +203,25 @@
 
 .contact__form--input[type="text"]::-webkit-input-placeholder, .contact__form--input[type="email"]::-webkit-input-placeholder {
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #f0f0f0;
   opacity: 1;
 }
 
 .contact__form--input[type="text"]:-ms-input-placeholder, .contact__form--input[type="email"]:-ms-input-placeholder {
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #f0f0f0;
   opacity: 1;
 }
 
 .contact__form--input[type="text"]::-ms-input-placeholder, .contact__form--input[type="email"]::-ms-input-placeholder {
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #f0f0f0;
   opacity: 1;
 }
 
 .contact__form--input[type="text"]::placeholder, .contact__form--input[type="email"]::placeholder {
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #f0f0f0;
   opacity: 1;
 }
 
@@ -232,25 +232,25 @@
 
 .contact__form--message[type="textarea"]::-webkit-input-placeholder {
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #f0f0f0;
   opacity: 1;
 }
 
 .contact__form--message[type="textarea"]:-ms-input-placeholder {
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #f0f0f0;
   opacity: 1;
 }
 
 .contact__form--message[type="textarea"]::-ms-input-placeholder {
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #f0f0f0;
   opacity: 1;
 }
 
 .contact__form--message[type="textarea"]::placeholder {
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #f0f0f0;
   opacity: 1;
 }
 
