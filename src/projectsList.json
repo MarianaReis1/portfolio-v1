@@ -7,11 +7,28 @@
         "imgAlt": "Ip Tracker Gif",
         "link": "http://ip-tracker.marianareis.co/",
         "githubLink": "https://github.com/MarianaReis1/IpTrackerReact",
-
-
         "tools": "REACTJS | API | SASS",
-        "description": "IpTracker is a beatiful simple Webapp to help you track IP and URLs. The UI/UX was concieved with a mobile first approach, taking advantage of ReactJs’s tools to keep it simple and to make best and fastes use of the API.",
-        "techSheet": ["html5", "css3", "sass", "react", "javascript", "git", "github"]
+        "description": [
+            "IpTracker is a user-friendly web application that helps you track IPs and URLs. This project was part of a challenge from Frontend Mentor.",
+            {
+                "type": "br",
+                "key": null,
+                "ref": null,
+                "props": {},
+                "_owner": null,
+                "_store": {}
+            },
+            "I used Google API to get the IP Address locations and Google Maps JavaScript to generate the map. The UI was conceived with a mobile-first approach, taking advantage of ReactJs' tools to keep all styles and components simple and make the fastest use of the API."
+        ],
+        "techSheet": [
+            "html5",
+            "css3",
+            "sass",
+            "react",
+            "javascript",
+            "git",
+            "github"
+        ]
     },
     {
         "title": "PauseMe Web App",
@@ -21,12 +38,29 @@
         "imgAlt": "PauseMe Gif",
         "link": "http://pauseme.marianareis.co/",
         "githubLink": "https://github.com/MarianaReis1/pauseme-js",
-
-
         "tools": "JAVASCRIPT | SASS | ILLUSTRATOR",
-        "description": "",
-        "techSheet": ["javascript", "html5", "css3", "sass", "illustrator", "git", "github"]
-
+        "description": [
+            "PauseMe is a breath guide Web Application that I built when I started to learn Design Systems and Responsive. ",
+            "This project allowed me to implement the knowledge about user-friendly designs and, also, continue revisiting most of the EcmaScript6+ features.",
+            {
+                "type": "br",
+                "key": null,
+                "ref": null,
+                "props": {},
+                "_owner": null,
+                "_store": {}
+            },
+            "The next move on this project is to expand the possibilities and create a ReactJS PauseMe, where it can be a scalable and upgraded application."
+        ],
+        "techSheet": [
+            "javascript",
+            "html5",
+            "css3",
+            "sass",
+            "illustrator",
+            "git",
+            "github"
+        ]
     },
     {
         "title": "Insure Web Page",
@@ -36,11 +70,18 @@
         "imgAlt": "insure Gif",
         "link": "https://marianareis1.github.io/insure/",
         "githubLink": "https://github.com/MarianaReis1/insure",
-
-
         "tools": "JAVASCRIPT | SASS | BEM",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna voluptate velit esse cillum dolore eu fugiat nulla.",
-        "techSheet": ["html5", "css3", "sass", "javascript", "git", "github"]
+        "description": [
+            "This landing page was part of a challenge from Frontend Mentor, where I should build it according to the design system given, respecting the responsiveness required. To complete this challenge, I used HTML5 and CSS3 alongside SASS and VanillaJS to optimize the site's layout depending on their device's screen size and implemented BEM Methodology to write cleaner and more readable classes."
+        ],
+        "techSheet": [
+            "html5",
+            "css3",
+            "sass",
+            "javascript",
+            "git",
+            "github"
+        ]
     },
     {
         "title": "Portfolio",
@@ -48,12 +89,21 @@
         "path": "/projects/portfolio",
         "imgSrc": "/PortfolioImg.png",
         "imgAlt": "portfolio Gif",
-        "link": "https://portfolio-ten-snowy.vercel.app/",
+        "link": "https://marianareis.co/",
         "githubLink": "https://github.com/MarianaReis1/portfolio",
-
-
         "tools": "REACTJS | FIGMA | SASS ",
-        "description": "This UI/UX was concieved with a mobile first approach. The idea behind this was to create a showcase of the projects that I have been working on in the past few months. The UI and the code behind it was kept simple, so the focus could go to the advantages that ReactJs can provide for simple applications.",
-        "techSheet": ["react", "javascript", "illustrator", "html5", "css3", "sass", "git", "github"]
+        "description": [
+            "This application was created using ReactJS + React Hooks. To build the design and the images, I used Figma + Illustrator. A combination of Pre-processor SASS + BEM Methodology helped me to manage the styles and animations. The application aimed to be responsive to all screen sizes, user-friendly and make the content easily accessible."
+        ],
+        "techSheet": [
+            "react",
+            "javascript",
+            "illustrator",
+            "html5",
+            "css3",
+            "sass",
+            "git",
+            "github"
+        ]
     }
 ]

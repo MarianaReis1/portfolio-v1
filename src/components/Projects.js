@@ -67,7 +67,7 @@ export const projectsList = [
 ]
 
 export default function Projects() {
-
+    console.log(JSON.stringify(projectsList))
     return (
         <section className="projects__content">
             <p className="general__code-caracters general__code-caracters--html">&#60;html&#62;</p>
